@@ -6,4 +6,5 @@
 * [第三章：建立第一個 Django App](./chapters/第三章：建立第一個DjangoApp.md)
 * [第四章：加入版本控制](./chapters/第四章：加入版本控制.md)
 * [第五章：建立資料庫](./chapters/第五章：建立資料庫.md)
+* [第六章：建立列表頁面](./chapters/第六章：建立列表頁面.md)
 
