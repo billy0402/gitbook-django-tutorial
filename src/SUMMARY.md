@@ -6,6 +6,7 @@
 * [第三章：建立第一個 Django App](./chapters/第三章：建立第一個DjangoApp.md)
 * [第四章：加入版本控制](./chapters/第四章：加入版本控制.md)
 * [第五章：建立資料庫](./chapters/第五章：建立資料庫.md)
+* [第六章：認識 Django ORM](./chapters/第六章：認識DjangoORM.md)
 * [第六章：建立列表頁面](./chapters/第六章：建立列表頁面.md)
 * [第七章：建立細項頁面](./chapters/第七章：建立細項頁面.md)
 * [第八章：建立新增頁面](./chapters/第八章：建立新增頁面.md)
