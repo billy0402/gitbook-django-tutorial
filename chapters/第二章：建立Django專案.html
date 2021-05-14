@@ -1,0 +1,577 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二章：建立 Django 專案 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第三章：建立第一個DjangoApp.html" />
+    
+    
+    <link rel="prev" href="第一章：環境建置.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第二章：建立 Django 專案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><b></b>&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;"><b></b>&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;</a></li><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;"><b></b>&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;</a></li><li><span class="title-icon "></span><a href="#&#x7528;-pycharm-&#x958B;&#x555F;&#x5C08;&#x6848;"><b></b>&#x7528; Pycharm &#x958B;&#x555F;&#x5C08;&#x6848;</a></li><li><span class="title-icon "></span><a href="#&#x8A2D;&#x5B9A;-pycharm-python-&#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;"><b></b>&#x8A2D;&#x5B9A; Pycharm Python &#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;-django"><b></b>&#x5B89;&#x88DD; Django</a></li><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><b></b>&#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;"><b></b>&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;</a></li></ul><li><span class="title-icon "></span><a href="#&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;"><b></b>&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x88DC;&#x5145;-&#x5B89;&#x88DD;-flake8"><b></b>[&#x88DC;&#x5145;] &#x5B89;&#x88DD; Flake8</a></li><ul><li><span class="title-icon "></span><a href="#&#x8A2D;&#x5B9A;-pycharm-flake8-&#x5FEB;&#x6377;&#x9375;"><b></b>&#x8A2D;&#x5B9A; Pycharm Flake8 &#x5FEB;&#x6377;&#x9375;</a></li></ul></ul></ul></div><a href="#&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><a name="&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;</h1>
+<p>&#x74B0;&#x5883;&#x5DF2;&#x7D93;&#x6E96;&#x5099;&#x597D;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;&#x5C31;&#x4F86;&#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;&#x3002;
+&#x9019;&#x4EFD;&#x6559;&#x5B78;&#x6703;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x5E36;&#x5927;&#x5BB6;&#x5EFA;&#x7F6E;&#x4E00;&#x500B;&#x5496;&#x5561;&#x7684;&#x7DB2;&#x7AD9;&#xFF0C;&#x4E26;&#x4E14;&#x53EF;&#x4EE5;&#x5C0D;&#x5496;&#x5561;&#x7684;&#x8CC7;&#x6599;&#x9032;&#x884C;&#x589E;&#x522A;&#x6539;&#x67E5;&#x3002;</p>
+<h2 id="&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;"><a name="&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;</h2>
+<p>&#x9996;&#x5148;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x5C08;&#x6848;&#x7684;&#x8CC7;&#x6599;&#x593E;&#xFF0C;&#x958B;&#x555F; Git Bash &#x5F8C;&#xFF0C;&#x8F38;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x4E26;&#x8ACB;&#x81EA;&#x884C;&#x53D6;&#x500B;&#x7B26;&#x5408;&#x5C08;&#x6848;&#x5167;&#x5BB9;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<pre><code class="lang-shell"># &#x5207;&#x63DB;&#x5230; &quot;&#x6587;&#x4EF6;&quot; &#x8CC7;&#x6599;&#x593E;
+$ cd Documents
+
+# &#x5EFA;&#x7ACB;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;
+$ mkdir ${your_project_name}
+
+# &#x5207;&#x63DB;&#x5230;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;
+$ cd ${your_project_name}
+</code></pre>
+<h2 id="&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;"><a name="&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;</h2>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x8981;&#x70BA;&#x6211;&#x5011;&#x7684;&#x5C08;&#x6848;&#x5EFA;&#x7ACB;&#x7368;&#x7ACB;&#x7684;&#x865B;&#x64EC;&#x74B0;&#x5883;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x5011;&#x8DDF;&#x7CFB;&#x7D71;&#x672C;&#x8EAB;&#x53CA;&#x5176;&#x4ED6;&#x5C08;&#x6848;&#x7684; Python &#x74B0;&#x5883;&#x9032;&#x884C;&#x9694;&#x96E2;&#x3002;</p>
+<blockquote>
+<p>&#x26A0;&#xFE0F; &#x8981;&#x5207;&#x63DB;&#x5230;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x5E95;&#x4E0B;&#xFF01;&#xFF01;&#xFF01;</p>
+<p>&#x26A0;&#xFE0F; &#x5982;&#x679C; &#x4F7F;&#x7528;&#x8005;&#x5BB6;&#x76EE;&#x9304; &#x6216; &#x6587;&#x4EF6;&#x8CC7;&#x6599;&#x593E; &#x7B49;&#x76F8;&#x5C0D;&#x65BC;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x7684;&#x4E0A;&#x5C64;&#x8CC7;&#x6599;&#x593E;&#x4E0B;&#xFF0C;&#x5DF2;&#x7D93;&#x6709; Pipfile &#x6216; Pipfile.lock &#x7684;&#x8A71;&#xFF0C;&#x8ACB;&#x5148;&#x884C;&#x624B;&#x52D5;&#x522A;&#x9664;&#xFF0C;&#x5426;&#x5247;&#x6703;&#x9020;&#x6210; Pipenv &#x865B;&#x64EC;&#x74B0;&#x5883;&#x5EFA;&#x932F;&#x5730;&#x65B9;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-shell"># &#x5EFA;&#x7ACB;&#x865B;&#x64EC;&#x74B0;&#x5883;
+$ pipenv --python 3.8
+Successfully created virtual environment!
+Virtualenv location: C:\Users\User\Documents\${your_project_name}\.venv
+Creating a Pipfile for this project...
+
+# &#x79FB;&#x9664;&#x865B;&#x64EC;&#x74B0;&#x5883; (&#x5EFA;&#x932F;&#x5730;&#x65B9;&#x7684;&#x8A71;)
+$ pipenv --rm
+Removing virtualenv (C:\Users\User\Documents\${your_project_name}\.venv)...
+[=   ] Running...
+
+# &#x958B;&#x555F;&#x865B;&#x64EC;&#x74B0;&#x5883;
+$ pipenv shell
+Launching subshell in virtual environment...
+
+# &#x78BA;&#x8A8D;&#x4F7F;&#x7528;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x7684; Python
+$ which python
+/c/Users/User/Documents/${your_project_name}/.venv/Scripts/python
+
+# &#x95DC;&#x9589;&#x865B;&#x64EC;&#x74B0;&#x5883;
+# (&#x95DC;&#x9589; Git Bash &#x524D;&#x6700;&#x597D;&#x5148;&#x95DC;&#x9589;&#xFF0C;&#x4E0D;&#x7136;&#x95DC;&#x9589; Git Bash &#x6642;&#xFF0C;&#x6703;&#x554F;&#x4F60;&#x6709;&#x7A0B;&#x5F0F;&#x6B63;&#x5728;&#x57F7;&#x884C;&#x4E2D;)
+$ exit
+</code></pre>
+<h2 id="&#x7528;-pycharm-&#x958B;&#x555F;&#x5C08;&#x6848;"><a name="&#x7528;-pycharm-&#x958B;&#x555F;&#x5C08;&#x6848;" class="anchor-navigation-ex-anchor" href="#&#x7528;-pycharm-&#x958B;&#x555F;&#x5C08;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7528; Pycharm &#x958B;&#x555F;&#x5C08;&#x6848;</h2>
+<p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Pycharm &#x4F86;&#x958B;&#x555F;&#x5C08;&#x6848;&#xFF0C;&#x4E26;&#x4E14;&#x89C0;&#x5BDF;&#x76EE;&#x524D;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4E0B;&#x6709;&#x54EA;&#x4E9B;&#x6A94;&#x6848;&#x7522;&#x751F;&#x3002;
+&#x61C9;&#x8A72;&#x53EA;&#x6703;&#x6709;&#x5169;&#x500B;&#x8CC7;&#x6599;&#x593E;&#xFF0C;&#x90FD;&#x662F;&#x900F;&#x904E; Pipenv &#x81EA;&#x52D5;&#x7522;&#x751F;&#x7684;&#x3002;</p>
+<ol>
+<li>&#x958B;&#x555F; PyCharm
+<img src="../images/CH2/2_3_1_&#x958B;&#x555F;PyCharm.jpg" alt="&#x958B;&#x555F; PyCharm"></li>
+<li>&#x5B89;&#x88DD;&#x6B65;&#x9A5F;&#x76F4;&#x63A5;&#x4E0B;&#x4E00;&#x6B65;&#x5230;&#x5E95;
+<img src="../images/CH2/2_3_2_&#x5B89;&#x88DD;&#x6B65;&#x9A5F;&#x76F4;&#x63A5;&#x4E0B;&#x4E00;&#x6B65;&#x5230;&#x5E95;.jpg" alt="&#x5B89;&#x88DD;&#x6B65;&#x9A5F;&#x76F4;&#x63A5;&#x4E0B;&#x4E00;&#x6B65;&#x5230;&#x5E95;"></li>
+<li>&#x9078;&#x64C7;&#x958B;&#x555F;&#x5C08;&#x6848;
+<img src="../images/CH2/2_3_3_&#x9078;&#x64C7;&#x958B;&#x555F;&#x5C08;&#x6848;.jpg" alt="&#x9078;&#x64C7;&#x958B;&#x555F;&#x5C08;&#x6848;"></li>
+<li>&#x627E;&#x5230;&#x5C08;&#x6848;&#x4F4D;&#x7F6E;
+<img src="../images/CH2/2_3_4_&#x627E;&#x5230;&#x5C08;&#x6848;&#x4F4D;&#x7F6E;.jpg" alt="&#x627E;&#x5230;&#x5C08;&#x6848;&#x4F4D;&#x7F6E;"></li>
+<li>&#x5C08;&#x6848;&#x76EE;&#x524D;&#x72C0;&#x614B;
+<img src="../images/CH2/2_3_5_&#x5C08;&#x6848;&#x76EE;&#x524D;&#x72C0;&#x614B;.jpg" alt="&#x5C08;&#x6848;&#x76EE;&#x524D;&#x72C0;&#x614B;"></li>
+</ol>
+<h2 id="&#x8A2D;&#x5B9A;-pycharm-python-&#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;"><a name="&#x8A2D;&#x5B9A;-pycharm-python-&#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8A2D;&#x5B9A;-pycharm-python-&#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8A2D;&#x5B9A; Pycharm Python &#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;</h2>
+<p>Pycharm &#x4E5F;&#x8A31;&#x6703;&#x81EA;&#x5DF1;&#x6293;&#x5230;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x7684; Python &#x76F4;&#x8B6F;&#x5668;&#xFF0C;&#x6216;&#x662F;&#x6293;&#x932F;&#x6210;&#x7CFB;&#x7D71;&#x7684; Python &#x76F4;&#x8B6F;&#x5668;&#x3002;
+&#x5982;&#x679C;&#x6C92;&#x6293;&#x5230;&#x6216;&#x662F;&#x6293;&#x932F;&#x90FD;&#x4E0D;&#x662F;&#x6211;&#x5011;&#x60F3;&#x8981;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x8981;&#x544A;&#x8A34; Pycharm &#x6211;&#x5011;&#x7684;&#x5C08;&#x6848;&#x76F4;&#x8B6F;&#x5668;&#x6B63;&#x78BA;&#x4F4D;&#x7F6E;&#x653E;&#x5728;&#x54EA;&#x88E1;&#x3002;
+&#x9019;&#x6A23; Pycharm &#x5C31;&#x6703;&#x4F7F;&#x7528;&#x6B63;&#x78BA;&#x7684; Python &#x76F4;&#x8B6F;&#x5668;&#x505A;&#x6B63;&#x78BA;&#x7684;&#x8A9E;&#x6CD5;&#x6AA2;&#x67E5;&#x8DDF;&#x984F;&#x8272;&#x6E32;&#x67D3;&#x3002;</p>
+<ol>
+<li>&#x958B;&#x555F; PyCharm &#x8A2D;&#x5B9A;
+<img src="../images/CH2/2_4_1_&#x958B;&#x555F;PyCharm&#x8A2D;&#x5B9A;.jpg" alt="&#x958B;&#x555F; PyCharm &#x8A2D;&#x5B9A;"></li>
+<li>&#x66F4;&#x63DB;Python&#x76F4;&#x8B6F;&#x5668;
+<img src="../images/CH2/2_4_2_&#x66F4;&#x63DB;Python&#x76F4;&#x8B6F;&#x5668;.jpg" alt="&#x66F4;&#x63DB;Python&#x76F4;&#x8B6F;&#x5668;"></li>
+<li>&#x65B0;&#x589E; Python &#x76F4;&#x8B6F;&#x5668;
+<img src="../images/CH2/2_4_3_&#x65B0;&#x589E;Python&#x76F4;&#x8B6F;&#x5668;.jpg" alt="&#x65B0;&#x589E; Python &#x76F4;&#x8B6F;&#x5668;"></li>
+<li>&#x9078;&#x64C7;&#x5DF2;&#x5EFA;&#x7ACB;&#x7684;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x4E2D;&#x7684; Python
+<img src="../images/CH2/2_4_4_&#x9078;&#x64C7;&#x5DF2;&#x5EFA;&#x7ACB;&#x7684;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x4E2D;&#x7684;Python.jpg" alt="&#x9078;&#x64C7;&#x5DF2;&#x5EFA;&#x7ACB;&#x7684;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x4E2D;&#x7684; Python"></li>
+<li>&#x76F4;&#x8B6F;&#x5668;&#x8A2D;&#x5B9A;&#x5B8C;&#x6210;
+<img src="../images/CH2/2_4_5_&#x76F4;&#x8B6F;&#x5668;&#x8A2D;&#x5B9A;&#x5B8C;&#x6210;.jpg" alt="&#x8A2D;&#x5B9A;&#x5B8C;&#x6210;"></li>
+</ol>
+<h2 id="&#x5B89;&#x88DD;-django"><a name="&#x5B89;&#x88DD;-django" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;-django"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD; Django</h2>
+<p>&#x6211;&#x5011;&#x518D;&#x6B21;&#x958B;&#x555F; Git Bash&#xFF0C;&#x900F;&#x904E; Pipenv &#x4F86;&#x5B89;&#x88DD; Django &#x5957;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-shell"># &#x5207;&#x63DB;&#x5230;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4E0B; (&#x4E0D;&#x5728;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4E0B;&#x7684;&#x8A71;)
+$ cd ${path_to_your_project}
+
+# &#x958B;&#x555F;&#x865B;&#x64EC;&#x74B0;&#x5883; (&#x5982;&#x679C;&#x9084;&#x6C92;&#x958B;&#x555F;&#x7684;&#x8A71;)
+$ pipenv shell
+
+# &#x5B89;&#x88DD; Django &#x5957;&#x4EF6;
+$ pipenv install django
+</code></pre>
+<p><img src="../images/CH2/2_5_1_&#x5B89;&#x88DD;Django.jpg" alt="&#x5B89;&#x88DD; Django"></p>
+<h2 id="&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><a name="&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;-django-&#x5C08;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;</h2>
+<p>&#x6211;&#x5011;&#x63A5;&#x4E0B;&#x4F86;&#x8981;&#x900F;&#x904E; Django &#x81EA;&#x52D5;&#x7522;&#x751F;&#x6838;&#x5FC3;&#x8CC7;&#x6599;&#x593E;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x5011;&#x6703;&#x53D6;&#x70BA; core&#x3002;</p>
+<pre><code class="lang-shell"># &#x5EFA;&#x7ACB; Django &#x5C08;&#x6848;
+# &#x6CE8;&#x610F;&#x6700;&#x5F8C;&#x90A3;&#x500B;&#x9EDE;&#xFF0C;core &#x624D;&#x6703;&#x5EFA;&#x5728;&#x7576;&#x524D;&#x8CC7;&#x6599;&#x593E;&#xFF0C;&#x6C92;&#x52A0;&#x7684;&#x8A71;&#xFF0C;&#x6703;&#x5EFA;&#x7ACB;&#x5169;&#x5C64;&#x8CC7;&#x6599;&#x593E;
+$ django-admin startproject core .
+</code></pre>
+<h3 id="&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;"><a name="&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;" class="anchor-navigation-ex-anchor" href="#&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C08;&#x6848;&#x6838;&#x5FC3;&#x67B6;&#x69CB;</h3>
+<p>core &#x8CC7;&#x6599;&#x593E;&#x4E2D;&#xFF0C;&#x6703;&#x5305;&#x542B;&#x5E7E;&#x500B;&#x6838;&#x5FC3;&#x6A94;&#x6848;&#xFF0C;&#x6211;&#x5011;&#x4E4B;&#x5F8C;&#x4E3B;&#x8981;&#x6703;&#x52D5;&#x5230;&#x7684;&#x53EA;&#x6709;&#x5176;&#x4E2D;&#x5169;&#x500B;&#x3002;
+&#x4E00;&#x500B;&#x662F;&#x8ABF;&#x6574;&#x6574;&#x9AD4;&#x5C08;&#x6848;&#x8A2D;&#x5B9A;&#x7684; settings.py&#xFF0C;&#x4EE5;&#x53CA;&#x914D;&#x7F6E;&#x7DB2;&#x7AD9; url &#x5C0E;&#x5411;&#x7684; urls.py&#x3002;</p>
+<pre><code class="lang-shell">.
+&#x251C;&#x2500;&#x2500; Pipfile          # &#x865B;&#x64EC;&#x74B0;&#x5883;&#x5B89;&#x88DD;&#x8A2D;&#x5B9A;&#x6A94;
+&#x251C;&#x2500;&#x2500; Pipfile.lock     # &#x865B;&#x64EC;&#x74B0;&#x5883;&#x5B89;&#x88DD;&#x8A2D;&#x5B9A;&#x6A94;
+&#x251C;&#x2500;&#x2500; core             # Django &#x6838;&#x5FC3;&#x8CC7;&#x6599;&#x593E;
+&#x2502;   &#x251C;&#x2500;&#x2500; __init__.py  # &#x5C07;&#x76EE;&#x9304;&#x8A2D;&#x70BA; Python &#x6A21;&#x7D44;
+&#x2502;   &#x251C;&#x2500;&#x2500; asgi.py      # ASGI &#x8A2D;&#x5B9A;&#x6A94;
+&#x2502;   &#x251C;&#x2500;&#x2500; settings.py  # Django &#x8A2D;&#x5B9A;&#x6A94;
+&#x2502;   &#x251C;&#x2500;&#x2500; urls.py      # &#x7DB2;&#x7AD9;&#x8DEF;&#x7531;&#x8A2D;&#x5B9A;&#x6A94;
+&#x2502;   &#x2514;&#x2500;&#x2500; wsgi.py      # WSGI &#x8A2D;&#x5B9A;&#x6A94;
+&#x2514;&#x2500;&#x2500; manage.py        # Django &#x6307;&#x4EE4;&#x7A0B;&#x5F0F;
+</code></pre>
+<h2 id="&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;"><a name="&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57F7;&#x884C;&#x958B;&#x767C;&#x7528;&#x4F3A;&#x670D;&#x5668;</h2>
+<p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E; manage.py &#x57F7;&#x884C; Django &#x7684;&#x5404;&#x7A2E;&#x6307;&#x4EE4;&#x3002;
+runserver &#x6703;&#x57F7;&#x884C; Django &#x958B;&#x767C;&#x7528;&#x7684;&#x4F3A;&#x670D;&#x5668;&#xFF0C;&#x6703;&#x9810;&#x8A2D;&#x4F7F;&#x7528; 8000 &#x57E0;&#x865F;&#x3002;
+&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x958B;&#x555F;&#x700F;&#x89BD;&#x5668;&#xFF0C;&#x5728;&#x7DB2;&#x5740;&#x5217;&#x8F38;&#x5165; <a href="http://127.0.0.1:8000/&#xFF0C;" target="_blank">http://127.0.0.1:8000/&#xFF0C;</a> &#x61C9;&#x8A72;&#x6703;&#x770B;&#x5230; Django &#x521D;&#x59CB;&#x5316;&#x7684;&#x6B61;&#x8FCE;&#x9801;&#x9762;&#x3002;</p>
+<pre><code class="lang-shell">$ python manage.py runserver
+Watching for file changes with StatReloader
+
+# &#x7528;&#x700F;&#x89BD;&#x5668;&#x958B;&#x555F; http://127.0.0.1:8000/
+</code></pre>
+<ul>
+<li><a href="http://127.0.0.1:8000/" target="_blank">&#x9810;&#x8A2D;&#x672C;&#x5730;&#x4F3A;&#x670D;&#x5668;</a></li>
+</ul>
+<p><img src="../images/CH2/2_7_1_Django&#x6B61;&#x8FCE;&#x9801;&#x9762;.jpg" alt="Django &#x6B61;&#x8FCE;&#x9801;&#x9762;"></p>
+<h2 id="&#x88DC;&#x5145;-&#x5B89;&#x88DD;-flake8"><a name="&#x88DC;&#x5145;-&#x5B89;&#x88DD;-flake8" class="anchor-navigation-ex-anchor" href="#&#x88DC;&#x5145;-&#x5B89;&#x88DD;-flake8"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x88DC;&#x5145;] &#x5B89;&#x88DD; Flake8</h2>
+<p>&#x5728;&#x5718;&#x968A;&#x958B;&#x767C;&#x7684;&#x904E;&#x7A0B;&#x4E2D;&#xFF0C;&#x5F7C;&#x6B64;&#x4E4B;&#x9593;&#x5BEB;&#x7A0B;&#x5F0F;&#x7684;&#x7FD2;&#x6163;&#x4E00;&#x5B9A;&#x6703;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;
+Python &#x6709;&#x5B9A;&#x7FA9;&#x51FA;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x80FD;&#x9075;&#x5B88;&#x7684;&#x6392;&#x7248;&#x98A8;&#x683C;&#x53EB;&#x505A; PEP 8&#x3002;
+&#x9019;&#x57FA;&#x672C;&#x4E0A;&#x4E0D;&#x662F;&#x5F37;&#x8FEB;&#x7684;&#xFF0C;&#x53EA;&#x8981;&#x8A9E;&#x6CD5;&#x5C0D;&#x7A0B;&#x5F0F;&#x80AF;&#x5B9A;&#x9084;&#x662F;&#x6703;&#x6B63;&#x5E38;&#x57F7;&#x884C;&#xFF0C;&#x4F46;&#x5927;&#x5BB6;&#x5149;&#x662F;&#x770B;&#x5230;&#x5F7C;&#x6B64;&#x4E0D;&#x4E00;&#x6A23;&#x7684;&#x6392;&#x7248;&#x53EF;&#x80FD;&#x6703;&#x5F88;&#x75DB;&#x82E6;&#x3002;
+Flake8 &#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x6392;&#x7248;&#x6AA2;&#x67E5;&#x5DE5;&#x5177;&#x4E4B;&#x4E00;&#xFF0C;&#x57F7;&#x884C;&#x5F8C;&#x6703;&#x544A;&#x8A34;&#x4F60;&#x54EA;&#x908A;&#x6C92;&#x6392;&#x597D;&#xFF0C;&#x80FD;&#x8B93;&#x5927;&#x5BB6;&#x7684;&#x6392;&#x7248;&#x65B9;&#x5F0F;&#x76E1;&#x53EF;&#x80FD;&#x7684;&#x4E00;&#x81F4;&#x3002;</p>
+<ul>
+<li><a href="https://flake8.pycqa.org/en/latest/" target="_blank">Flake8</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP 8 -- Style Guide for Python Code</a></li>
+</ul>
+<pre><code class="lang-shell"># &#x5B89;&#x88DD; flake8
+$ pipenv install --dev flake8 flake8-commas
+
+# &#x6392;&#x7248;&#x6AA2;&#x67E5;&#x6307;&#x4EE4;&#xFF0C;--exclude &#x6392;&#x9664;&#x865B;&#x64EC;&#x74B0;&#x5883;. &#x8CC7;&#x6599;&#x5EAB;&#x7570;&#x52D5;&#x6A94;
+$ flake8 --show-source --statistics --exclude venv,.venv,migrations .
+</code></pre>
+<h3 id="&#x8A2D;&#x5B9A;-pycharm-flake8-&#x5FEB;&#x6377;&#x9375;"><a name="&#x8A2D;&#x5B9A;-pycharm-flake8-&#x5FEB;&#x6377;&#x9375;" class="anchor-navigation-ex-anchor" href="#&#x8A2D;&#x5B9A;-pycharm-flake8-&#x5FEB;&#x6377;&#x9375;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8A2D;&#x5B9A; Pycharm Flake8 &#x5FEB;&#x6377;&#x9375;</h3>
+<p>&#x56E0;&#x70BA;&#x6392;&#x7248;&#x6AA2;&#x67E5;&#x662F;&#x5F88;&#x5E38;&#x9032;&#x884C;&#x7684;&#x52D5;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x8A2D;&#x5B9A;&#x5FEB;&#x6377;&#x9375;&#x6703;&#x5F88;&#x65B9;&#x4FBF;&#x3002;&#x6309;&#x4E45;&#x9084;&#x80FD;&#x6210;&#x70BA;&#x7FD2;&#x6163;&#x52D5;&#x4F5C;&#xFF0C;&#x4E5F;&#x80FD;&#x8B93;&#x5927;&#x5BB6;&#x66F4;&#x9858;&#x610F;&#x9032;&#x884C;&#x6392;&#x7248;&#x6AA2;&#x67E5;&#x7684;&#x52D5;&#x4F5C;&#x3002; </p>
+<ol>
+<li>&#x958B;&#x555F; PyCharm &#x8A2D;&#x5B9A;
+<img src="../images/CH2/2_4_1_&#x958B;&#x555F;PyCharm&#x8A2D;&#x5B9A;.jpg" alt="&#x958B;&#x555F; PyCharm &#x8A2D;&#x5B9A;"></li>
+<li><p>&#x8A2D;&#x5B9A; Flake8 External Tools</p>
+<blockquote>
+<p>Program: $PyInterpreterDirectory$/python</p>
+<p>Arguments: -m flake8 --show-source --statistics --exclude venv,.venv,migrations $ProjectFileDir$</p>
+<p>Working directory: $ProjectFileDir$</p>
+</blockquote>
+<p><img src="../images/CH2/2_8_1_&#x8A2D;&#x5B9A;Flake8ExternalTools.jpg" alt="&#x8A2D;&#x5B9A; Flake8 External Tools"></p>
+</li>
+<li>&#x8A2D;&#x5B9A; Flake8 &#x5FEB;&#x6377;&#x9375;
+<img src="../images/CH2/2_8_2_&#x8A2D;&#x5B9A;Flake8&#x71B1;&#x9375;.jpg" alt="&#x8A2D;&#x5B9A; Flake8 &#x5FEB;&#x6377;&#x9375;"></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第一章：環境建置.html" class="navigation navigation-prev " aria-label="Previous page: 第一章：環境建置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第三章：建立第一個DjangoApp.html" class="navigation navigation-next " aria-label="Next page: 第三章：建立第一個 Django App">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二章：建立 Django 專案","level":"1.3","depth":1,"next":{"title":"第三章：建立第一個 Django App","level":"1.4","depth":1,"path":"chapters/第三章：建立第一個DjangoApp.md","ref":"./chapters/第三章：建立第一個DjangoApp.md","articles":[]},"previous":{"title":"第一章：環境建置","level":"1.2","depth":1,"path":"chapters/第一章：環境建置.md","ref":"./chapters/第一章：環境建置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第二章：建立Django專案.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

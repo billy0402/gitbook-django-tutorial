@@ -1,0 +1,575 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第五章：建立資料庫 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第六章：認識DjangoORM.html" />
+    
+    
+    <link rel="prev" href="第四章：加入版本控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第五章：建立資料庫</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;"><b></b>&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;"><b></b>&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;</a></li><li><span class="title-icon "></span><a href="#coffeesmodelspy"><b></b>coffees/models.py</a></li><li><span class="title-icon "></span><a href="#coffeesadminpy"><b></b>coffees/admin.py</a></li><li><span class="title-icon "></span><a href="#coffeesappspy"><b></b>coffees/apps.py</a></li><li><span class="title-icon "></span><a href="#coresettingspy"><b></b>core/settings.py</a></li><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;"><b></b>&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;</a></li><li><span class="title-icon "></span><a href="#&#x9032;&#x884C;&#x7570;&#x52D5;"><b></b>&#x9032;&#x884C;&#x7570;&#x52D5;</a></li><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;"><b></b>&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;</a></li><li><span class="title-icon "></span><a href="#&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;"><b></b>&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;-db-browser-for-sqlite"><b></b>&#x5B89;&#x88DD; DB Browser for SQLite</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;-db-browser-for-sqlite-&#x67E5;&#x770B;-dbsqlite"><b></b>&#x4F7F;&#x7528; DB Browser for SQLite &#x67E5;&#x770B; db.sqlite</a></li></ul></ul></ul></div><a href="#&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;"><a name="&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;</h1>
+<h2 id="&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;"><a name="&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;" class="anchor-navigation-ex-anchor" href="#&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;</h2>
+<p><img src="../images/CH5/5_1_1_&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;.jpg" alt="&#x8CC7;&#x6599;&#x5EAB;&#x95DC;&#x806F;&#x5716;"></p>
+<h2 id="coffeesmodelspy"><a name="coffeesmodelspy" class="anchor-navigation-ex-anchor" href="#coffeesmodelspy"><i class="fa fa-link" aria-hidden="true"></i></a>coffees/models.py</h2>
+<blockquote>
+<p>&#x5B9A;&#x7FA9;&#x8CC7;&#x6599;&#x5EAB;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+
+<span class="hljs-keyword">from</span> utils.models <span class="hljs-keyword">import</span> TimestampModel
+
+
+<span class="hljs-comment"># Create your models here.</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Roast</span><span class="hljs-params">(models.TextChoices)</span>:</span>
+    <span class="hljs-comment"># enum = value, display</span>
+    LIGHT = <span class="hljs-string">&apos;Light&apos;</span>, <span class="hljs-string">&apos;&#x6975;&#x6DFA;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+    CINNAMON = <span class="hljs-string">&apos;Cinnamon&apos;</span>, <span class="hljs-string">&apos;&#x6DFA;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+    MEDIUM = <span class="hljs-string">&apos;Medium&apos;</span>, <span class="hljs-string">&apos;&#x4E2D;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+    HIGH = <span class="hljs-string">&apos;High&apos;</span>, <span class="hljs-string">&apos;&#x4E2D;&#x5EA6;&#x5FAE;&#x6DF1;&#x70D8;&#x7119;&apos;</span>
+    CITY = <span class="hljs-string">&apos;City&apos;</span>, <span class="hljs-string">&apos;&#x4E2D;&#x6DF1;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+    FULL_CITY = <span class="hljs-string">&apos;Full-City&apos;</span>, <span class="hljs-string">&apos;&#x5FAE;&#x6DF1;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+    FRENCH = <span class="hljs-string">&apos;French&apos;</span>, <span class="hljs-string">&apos;&#x6975;&#x6DF1;&#x70D8;&#x7119;&apos;</span>
+    ITALIAN = <span class="hljs-string">&apos;Italian&apos;</span>, <span class="hljs-string">&apos;&#x6975;&#x6DF1;&#x5EA6;&#x70D8;&#x7119;&apos;</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OriginPlace</span><span class="hljs-params">(models.Model)</span>:</span>
+    name = models.CharField(<span class="hljs-string">&apos;&#x540D;&#x7A31;&apos;</span>, max_length=<span class="hljs-number">20</span>, unique=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.name
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x7522;&#x5730;&apos;</span>
+        verbose_name_plural = <span class="hljs-string">&apos;&#x7522;&#x5730;&apos;</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span><span class="hljs-params">(TimestampModel)</span>:</span>
+    name = models.CharField(<span class="hljs-string">&apos;&#x540D;&#x7A31;&apos;</span>, max_length=<span class="hljs-number">10</span>, unique=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.name
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x6A19;&#x7C64;&apos;</span>
+        verbose_name_plural = <span class="hljs-string">&apos;&#x6A19;&#x7C64;&apos;</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Coffee</span><span class="hljs-params">(TimestampModel)</span>:</span>
+    name = models.CharField(<span class="hljs-string">&apos;&#x540D;&#x7A31;&apos;</span>, max_length=<span class="hljs-number">20</span>, unique=<span class="hljs-keyword">True</span>)
+    description = models.TextField(<span class="hljs-string">&apos;&#x63CF;&#x8FF0;&apos;</span>)
+    roast = models.CharField(<span class="hljs-string">&apos;&#x5C3A;&#x5BF8;&apos;</span>, max_length=<span class="hljs-number">10</span>, choices=Roast.choices)
+    price = models.PositiveIntegerField(<span class="hljs-string">&apos;&#x50F9;&#x683C;&apos;</span>)
+    origin_place = models.ForeignKey(
+        OriginPlace,
+        on_delete=models.PROTECT,
+        verbose_name=<span class="hljs-string">&apos;&#x7A2E;&#x985E;&apos;</span>,
+    )
+    tags = models.ManyToManyField(Tag, verbose_name=<span class="hljs-string">&apos;&#x6A19;&#x7C64;&apos;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> self.name
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        verbose_name = <span class="hljs-string">&apos;&#x5496;&#x5561;&#x8C46;&apos;</span>
+        verbose_name_plural = <span class="hljs-string">&apos;&#x5496;&#x5561;&#x8C46;&apos;</span>
+</code></pre>
+<h2 id="coffeesadminpy"><a name="coffeesadminpy" class="anchor-navigation-ex-anchor" href="#coffeesadminpy"><i class="fa fa-link" aria-hidden="true"></i></a>coffees/admin.py</h2>
+<blockquote>
+<p>&#x8A3B;&#x518A;&#x8CC7;&#x6599;&#x8868;&#x5230;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Coffee, OriginPlace, Tag
+
+<span class="hljs-comment"># Register your models here.</span>
+admin.site.register(Coffee)
+admin.site.register(OriginPlace)
+admin.site.register(Tag)
+</code></pre>
+<h2 id="coffeesappspy"><a name="coffeesappspy" class="anchor-navigation-ex-anchor" href="#coffeesappspy"><i class="fa fa-link" aria-hidden="true"></i></a>coffees/apps.py</h2>
+<blockquote>
+<p>&#x8B93;&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;&#x986F;&#x793A; APP &#x4E2D;&#x6587;&#x540D;&#x7A31;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.apps <span class="hljs-keyword">import</span> AppConfig
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoffeesConfig</span><span class="hljs-params">(AppConfig)</span>:</span>
+    default_auto_field = <span class="hljs-string">&apos;django.db.models.BigAutoField&apos;</span>
+    name = <span class="hljs-string">&apos;coffees&apos;</span>
+    verbose_name = <span class="hljs-string">&apos;&#x5496;&#x5561;&apos;</span>
+    verbose_name_plural = <span class="hljs-string">&apos;&#x5496;&#x5561;&apos;</span>
+</code></pre>
+<h2 id="coresettingspy"><a name="coresettingspy" class="anchor-navigation-ex-anchor" href="#coresettingspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/settings.py</h2>
+<blockquote>
+<p>&#x8A9E;&#x7CFB;&#x8207;&#x6642;&#x5340;&#x8ABF;&#x6574;</p>
+</blockquote>
+<pre><code class="lang-python">LANGUAGE_CODE = <span class="hljs-string">&apos;zh-hant&apos;</span>
+
+TIME_ZONE = <span class="hljs-string">&apos;Asia/Taipei&apos;</span>
+</code></pre>
+<h2 id="&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;"><a name="&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x7570;&#x52D5;&#x6A94;</h2>
+<pre><code class="lang-shell">$ python manage.py makemigrations
+</code></pre>
+<h2 id="&#x9032;&#x884C;&#x7570;&#x52D5;"><a name="&#x9032;&#x884C;&#x7570;&#x52D5;" class="anchor-navigation-ex-anchor" href="#&#x9032;&#x884C;&#x7570;&#x52D5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9032;&#x884C;&#x7570;&#x52D5;</h2>
+<pre><code class="lang-shell">$ python manage.py migrate
+</code></pre>
+<h2 id="&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;"><a name="&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x8005;&#x5E33;&#x865F;</h2>
+<pre><code class="lang-shell">$ winpty python manage.py createsuperuser
+</code></pre>
+<h2 id="&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;"><a name="&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x958B;&#x555F;&#x7BA1;&#x7406;&#x8005;&#x756B;&#x9762;</h2>
+<ul>
+<li><p><a href="http://localhost:8000/admin/" target="_blank">&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;</a></p>
+</li>
+<li><p>&#x767B;&#x5165;&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;
+<img src="../images/CH5/5_2_1_&#x7BA1;&#x7406;&#x8005;&#x767B;&#x5165;&#x9801;&#x9762;.jpg" alt="&#x767B;&#x5165;&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;"></p>
+</li>
+<li>&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;
+<img src="../images/CH5/5_2_2_&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;.jpg" alt="&#x7BA1;&#x7406;&#x8005;&#x9801;&#x9762;"></li>
+</ul>
+<h2 id="&#x5B89;&#x88DD;-db-browser-for-sqlite"><a name="&#x5B89;&#x88DD;-db-browser-for-sqlite" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;-db-browser-for-sqlite"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD; DB Browser for SQLite</h2>
+<ul>
+<li><p><a href="https://sqlitebrowser.org/" target="_blank">DB Browser for SQLite</a></p>
+</li>
+<li><p>&#x9032;&#x5165; DB Browser for SQLite &#x5B98;&#x7DB2;&#x4E0B;&#x8F09;&#x5B89;&#x88DD;&#x6A94;
+<img src="../images/CH5/5_3_1_&#x9032;&#x5165;DBBrowserforSQLite&#x5B98;&#x7DB2;.jpg" alt="&#x9032;&#x5165; DB Browser for SQLite &#x5B98;&#x7DB2;"></p>
+</li>
+<li>&#x4E0B;&#x8F09;&#x5B89;&#x88DD;&#x6A94;
+<img src="../images/CH5/5_3_2_&#x4E0B;&#x8F09;&#x5B89;&#x88DD;&#x6A94;.jpg" alt="&#x4E0B;&#x8F09;&#x5B89;&#x88DD;&#x6A94;"></li>
+<li>&#x958B;&#x555F;&#x4E0B;&#x8F09;&#x6A94;&#x6848;&#x627E;&#x5230;&#x5B89;&#x88DD;&#x6A94;
+<img src="../images/CH5/5_3_3_&#x958B;&#x555F;&#x4E0B;&#x8F09;&#x6A94;&#x6848;&#x627E;&#x5230;&#x5B89;&#x88DD;&#x6A94;.jpg" alt="&#x958B;&#x555F;&#x4E0B;&#x8F09;&#x6A94;&#x6848;&#x627E;&#x5230;&#x5B89;&#x88DD;&#x6A94;"></li>
+<li>&#x540C;&#x610F;&#x4F7F;&#x7528;&#x689D;&#x6B3E;
+<img src="../images/CH5/5_3_4_&#x540C;&#x610F;&#x4F7F;&#x7528;&#x689D;&#x6B3E;.jpg" alt="&#x540C;&#x610F;&#x4F7F;&#x7528;&#x689D;&#x6B3E;"></li>
+<li>&#x8A2D;&#x5B9A;&#x5B89;&#x88DD;&#x5230;&#x958B;&#x59CB;&#x529F;&#x80FD;&#x8868;
+<img src="../images/CH5/5_3_5_&#x8A2D;&#x5B9A;&#x5B89;&#x88DD;&#x5230;&#x958B;&#x59CB;&#x529F;&#x80FD;&#x8868;.jpg" alt="&#x8A2D;&#x5B9A;&#x5B89;&#x88DD;&#x5230;&#x958B;&#x59CB;&#x529F;&#x80FD;&#x8868;"></li>
+<li>&#x5B89;&#x88DD;&#x5B8C;&#x6210;
+<img src="../images/CH5/5_3_6_&#x5B89;&#x88DD;&#x5B8C;&#x6210;.jpg" alt="&#x5B89;&#x88DD;&#x5B8C;&#x6210;"></li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;-db-browser-for-sqlite-&#x67E5;&#x770B;-dbsqlite"><a name="&#x4F7F;&#x7528;-db-browser-for-sqlite-&#x67E5;&#x770B;-dbsqlite" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;-db-browser-for-sqlite-&#x67E5;&#x770B;-dbsqlite"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528; DB Browser for SQLite &#x67E5;&#x770B; db.sqlite</h3>
+<ol>
+<li>&#x958B;&#x555F; DB Browser for SQLite
+<img src="../images/CH5/5_4_1_&#x958B;&#x555F;DBBrowserforSQLite.jpg" alt="&#x958B;&#x555F; DB Browser for SQLite"></li>
+<li>&#x958B;&#x555F;&#x5C08;&#x6848;&#x4E0B;&#x7684; SQLite
+<img src="../images/CH5/5_4_2_&#x958B;&#x555F;&#x5C08;&#x6848;&#x4E0B;&#x7684;SQLite.jpg" alt="&#x958B;&#x555F;&#x5C08;&#x6848;&#x4E0B;&#x7684; SQLite"></li>
+<li>&#x5207;&#x63DB;&#x8CC7;&#x6599;&#x8868;
+<img src="../images/CH5/5_4_3_&#x5207;&#x63DB;&#x8CC7;&#x6599;&#x8868;.jpg" alt="&#x5207;&#x63DB;&#x8CC7;&#x6599;&#x8868;"></li>
+<li>&#x5496;&#x5561;&#x8CC7;&#x6599;&#x8868;&#x756B;&#x9762;
+<img src="../images/CH5/5_4_4_&#x5496;&#x5561;&#x8CC7;&#x6599;&#x8868;&#x756B;&#x9762;.jpg" alt="&#x5496;&#x5561;&#x8CC7;&#x6599;&#x8868;&#x756B;&#x9762;"></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第四章：加入版本控制.html" class="navigation navigation-prev " aria-label="Previous page: 第四章：加入版本控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第六章：認識DjangoORM.html" class="navigation navigation-next " aria-label="Next page: 第六章：認識 Django ORM">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第五章：建立資料庫","level":"1.6","depth":1,"next":{"title":"第六章：認識 Django ORM","level":"1.7","depth":1,"path":"chapters/第六章：認識DjangoORM.md","ref":"./chapters/第六章：認識DjangoORM.md","articles":[]},"previous":{"title":"第四章：加入版本控制","level":"1.5","depth":1,"path":"chapters/第四章：加入版本控制.md","ref":"./chapters/第四章：加入版本控制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第五章：建立資料庫.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

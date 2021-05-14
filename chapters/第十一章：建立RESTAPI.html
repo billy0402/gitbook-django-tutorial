@@ -1,0 +1,497 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十一章：建立 REST API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="API權限.html" />
+    
+    
+    <link rel="prev" href="第十章：建立刪除頁面.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第十一章：建立 REST API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;restapimd"><b></b>&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;RESTAPI.md</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;-django-rest-framework"><b></b>&#x5B89;&#x88DD; Django REST framework</a></li><li><span class="title-icon "></span><a href="#coresettingspy"><b></b>core/settings.py</a></li><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684;-app&#xFF0C;&#x5C08;&#x9580;&#x7D66;-api-&#x4F7F;&#x7528;"><b></b>&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684; app&#xFF0C;&#x5C08;&#x9580;&#x7D66; API &#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#coresettingspy_1"><b></b>core/settings.py</a></li><li><span class="title-icon "></span><a href="#apiserializerspy"><b></b>api/serializers.py</a></li><li><span class="title-icon "></span><a href="#apiviewspy"><b></b>api/views.py</a></li><li><span class="title-icon "></span><a href="#coreurlspy"><b></b>core/urls.py</a></li></ul></ul></div><a href="#&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;restapimd" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;restapimd"><a name="&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;restapimd" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;restapimd"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x5341;&#x4E00;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;RESTAPI.md</h1>
+<h2 id="&#x5B89;&#x88DD;-django-rest-framework"><a name="&#x5B89;&#x88DD;-django-rest-framework" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;-django-rest-framework"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD; Django REST framework</h2>
+<pre><code class="lang-shell">$ pipenv install djangorestframework
+</code></pre>
+<h2 id="coresettingspy"><a name="coresettingspy" class="anchor-navigation-ex-anchor" href="#coresettingspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/settings.py</h2>
+<blockquote>
+<p>&#x8A3B;&#x518A; Django REST framework &#x5230; Django</p>
+</blockquote>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    ...
+
+    <span class="hljs-string">&apos;rest_framework&apos;</span>,
+    <span class="hljs-string">&apos;bootstrap4&apos;</span>,
+
+    ...
+]
+</code></pre>
+<h2 id="&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684;-app&#xFF0C;&#x5C08;&#x9580;&#x7D66;-api-&#x4F7F;&#x7528;"><a name="&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684;-app&#xFF0C;&#x5C08;&#x9580;&#x7D66;-api-&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684;-app&#xFF0C;&#x5C08;&#x9580;&#x7D66;-api-&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x65B0;&#x7684; app&#xFF0C;&#x5C08;&#x9580;&#x7D66; API &#x4F7F;&#x7528;</h2>
+<pre><code class="lang-shell">$ python manage.py startapp api
+</code></pre>
+<h2 id="coresettingspy_1"><a name="coresettingspy_1" class="anchor-navigation-ex-anchor" href="#coresettingspy_1"><i class="fa fa-link" aria-hidden="true"></i></a>core/settings.py</h2>
+<blockquote>
+<p>&#x8A3B;&#x518A; API app &#x5230; Django</p>
+</blockquote>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    ...
+
+    <span class="hljs-string">&apos;coffees.apps.CoffeesConfig&apos;</span>,
+    <span class="hljs-string">&apos;api.apps.ApiConfig&apos;</span>,
+]
+</code></pre>
+<h2 id="apiserializerspy"><a name="apiserializerspy" class="anchor-navigation-ex-anchor" href="#apiserializerspy"><i class="fa fa-link" aria-hidden="true"></i></a>api/serializers.py</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.serializers <span class="hljs-keyword">import</span> ModelSerializer
+
+<span class="hljs-keyword">from</span> coffees.models <span class="hljs-keyword">import</span> Coffee
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoffeeSerializer</span><span class="hljs-params">(ModelSerializer)</span>:</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Coffee
+        fields = <span class="hljs-string">&apos;__all__&apos;</span>
+</code></pre>
+<h2 id="apiviewspy"><a name="apiviewspy" class="anchor-navigation-ex-anchor" href="#apiviewspy"><i class="fa fa-link" aria-hidden="true"></i></a>api/views.py</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> rest_framework.viewsets <span class="hljs-keyword">import</span> ModelViewSet
+
+<span class="hljs-keyword">from</span> api.serializers <span class="hljs-keyword">import</span> CoffeeSerializer
+<span class="hljs-keyword">from</span> coffees.models <span class="hljs-keyword">import</span> Coffee
+
+
+<span class="hljs-comment"># Create your views here.</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CoffeeViewSet</span><span class="hljs-params">(ModelViewSet)</span>:</span>
+    queryset = Coffee.objects.all()
+    serializer_class = CoffeeSerializer
+</code></pre>
+<h2 id="coreurlspy"><a name="coreurlspy" class="anchor-navigation-ex-anchor" href="#coreurlspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/urls.py</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.contrib <span class="hljs-keyword">import</span> admin
+<span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path, include
+<span class="hljs-keyword">from</span> rest_framework.routers <span class="hljs-keyword">import</span> DefaultRouter
+
+<span class="hljs-keyword">from</span> api <span class="hljs-keyword">import</span> views <span class="hljs-keyword">as</span> api_views
+
+router = DefaultRouter()
+router.register(<span class="hljs-string">&apos;coffees&apos;</span>, api_views.CoffeeViewSet)
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;coffees/&apos;</span>, include(<span class="hljs-string">&apos;coffees.urls&apos;</span>)),
+    path(<span class="hljs-string">&apos;api/&apos;</span>, include(router.urls)),
+    path(<span class="hljs-string">&apos;admin/&apos;</span>, admin.site.urls),
+]
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第十章：建立刪除頁面.html" class="navigation navigation-prev " aria-label="Previous page: 第十章：建立刪除頁面">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="API權限.html" class="navigation navigation-next " aria-label="Next page: API權限">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十一章：建立 REST API","level":"1.13","depth":1,"next":{"title":"API權限","level":"1.14","depth":1,"path":"chapters/API權限.md","ref":"./chapters/API權限.md","articles":[]},"previous":{"title":"第十章：建立刪除頁面","level":"1.12","depth":1,"path":"chapters/第十章：建立刪除頁面.md","ref":"./chapters/第十章：建立刪除頁面.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第十一章：建立RESTAPI.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

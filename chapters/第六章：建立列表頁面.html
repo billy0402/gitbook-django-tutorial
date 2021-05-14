@@ -1,0 +1,570 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第六章：建立列表頁面 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第七章：建立細項頁面.html" />
+    
+    
+    <link rel="prev" href="第六章：認識DjangoORM.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第六章：建立列表頁面</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;"><b></b>&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;"><b></b>&#x5B89;&#x88DD;</a></li><li><span class="title-icon "></span><a href="#coffeesviewspy"><b></b>coffees/views.py</a></li><li><span class="title-icon "></span><a href="#coffeesurlspy"><b></b>coffees/urls.py</a></li><li><span class="title-icon "></span><a href="#coresettingspy"><b></b>core/settings.py</a></li><li><span class="title-icon "></span><a href="#templateslayouthtml"><b></b>templates/layout.html</a></li><li><span class="title-icon "></span><a href="#templatescoffeesindexhtml"><b></b>templates/coffees/index.html</a></li><li><span class="title-icon "></span><a href="#&#x6210;&#x679C;"><b></b>&#x6210;&#x679C;</a></li></ul></ul></div><a href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;"><a name="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x5EFA;&#x7ACB;&#x5217;&#x8868;&#x9801;&#x9762;</h1>
+<h2 id="&#x5B89;&#x88DD;"><a name="&#x5B89;&#x88DD;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD;</h2>
+<ul>
+<li><a href="https://github.com/zostera/django-bootstrap4" target="_blank">django-bootstrap 4</a></li>
+</ul>
+<pre><code class="lang-shell">$ pipenv install django-bootstrap4
+</code></pre>
+<h2 id="coffeesviewspy"><a name="coffeesviewspy" class="anchor-navigation-ex-anchor" href="#coffeesviewspy"><i class="fa fa-link" aria-hidden="true"></i></a>coffees/views.py</h2>
+<blockquote>
+<p>&#x5B9A;&#x7FA9;&#x5217;&#x8868;&#x9801;&#x9762;&#x7684;&#x8655;&#x7406;&#x51FD;&#x5F0F;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Coffee
+
+
+<span class="hljs-comment"># Create your views here.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">(request)</span>:</span>
+    coffees = Coffee.objects.all()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;coffees/index.html&apos;</span>, {<span class="hljs-string">&apos;coffees&apos;</span>: coffees})
+</code></pre>
+<h2 id="coffeesurlspy"><a name="coffeesurlspy" class="anchor-navigation-ex-anchor" href="#coffeesurlspy"><i class="fa fa-link" aria-hidden="true"></i></a>coffees/urls.py</h2>
+<blockquote>
+<p>url &#x70BA; &apos;/coffees/&apos; &#x6642;&#xFF0C;&#x4F7F;&#x7528; index &#x51FD;&#x5F0F;&#x9032;&#x884C;&#x8655;&#x7406;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+app_name = <span class="hljs-string">&apos;coffees&apos;</span>
+urlpatterns = [
+    <span class="hljs-comment"># ex: /coffees/</span>
+    path(<span class="hljs-string">&apos;&apos;</span>, views.index, name=<span class="hljs-string">&apos;index&apos;</span>),
+]
+</code></pre>
+<h2 id="coresettingspy"><a name="coresettingspy" class="anchor-navigation-ex-anchor" href="#coresettingspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/settings.py</h2>
+<blockquote>
+<p>&#x8A3B;&#x518A; django-bootstrap 4&#xFF0C;&#x53CA;&#x544A;&#x8A34; Django &#x6A21;&#x677F;&#x8CC7;&#x6599;&#x593E;&#x4F4D;&#x7F6E;</p>
+</blockquote>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    ...
+
+    <span class="hljs-string">&apos;bootstrap4&apos;</span>,
+
+    ...
+]
+
+TEMPLATES = [
+    {
+        ...
+        <span class="hljs-string">&apos;DIRS&apos;</span>: [
+            BASE_DIR / <span class="hljs-string">&apos;templates&apos;</span>,
+        ],
+        ...
+    },
+]
+</code></pre>
+<h2 id="templateslayouthtml"><a name="templateslayouthtml" class="anchor-navigation-ex-anchor" href="#templateslayouthtml"><i class="fa fa-link" aria-hidden="true"></i></a>templates/layout.html</h2>
+<blockquote>
+<p>&#x6574;&#x9AD4;&#x5171;&#x7528;&#x7684; HTML &#x67B6;&#x69CB;</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x5496;&#x5561;&#x5E97;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>
+          <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css&quot;</span>
+          <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l&quot;</span>
+          <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+{% load bootstrap4 %}
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container my-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>
+            {% block main %}{% endblock %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://code.jquery.com/jquery-3.5.1.slim.min.js&quot;</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&quot;</span>
+        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js&quot;</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns&quot;</span>
+        <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h2 id="templatescoffeesindexhtml"><a name="templatescoffeesindexhtml" class="anchor-navigation-ex-anchor" href="#templatescoffeesindexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>templates/coffees/index.html</h2>
+<blockquote>
+<p>&#x5217;&#x8868;&#x9801;&#x9762;&#x81EA;&#x6709;&#x7684; HTML &#x67B6;&#x69CB;</p>
+</blockquote>
+<pre><code class="lang-html">{% extends &apos;layout.html&apos; %}
+
+{% block main %}
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x5496;&#x5561;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table table-striped&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>#<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x540D;&#x7A31;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x70D8;&#x57F9;&#x7A0B;&#x5EA6;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x512A;&#x60E0;&#x50F9;&#x683C;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            {% for coffee in coffees %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ coffee.id }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ coffee.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ coffee.get_roast_display }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ coffee.discount }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            {% empty %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-center&quot;</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>&#x6C92;&#x6709;&#x5496;&#x5561;&#xFF5E;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            {% endfor %}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<h2 id="&#x6210;&#x679C;"><a name="&#x6210;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x6210;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6210;&#x679C;</h2>
+<ul>
+<li><a href="http://localhost:8000/coffees/" target="_blank">&#x5217;&#x8868;&#x9801;&#x9762;</a></li>
+</ul>
+<p><img src="../images/CH6/6_1_1_&#x6210;&#x679C;.jpg" alt="&#x6210;&#x679C;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第六章：認識DjangoORM.html" class="navigation navigation-prev " aria-label="Previous page: 第六章：認識 Django ORM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第七章：建立細項頁面.html" class="navigation navigation-next " aria-label="Next page: 第七章：建立細項頁面">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第六章：建立列表頁面","level":"1.8","depth":1,"next":{"title":"第七章：建立細項頁面","level":"1.9","depth":1,"path":"chapters/第七章：建立細項頁面.md","ref":"./chapters/第七章：建立細項頁面.md","articles":[]},"previous":{"title":"第六章：認識 Django ORM","level":"1.7","depth":1,"path":"chapters/第六章：認識DjangoORM.md","ref":"./chapters/第六章：認識DjangoORM.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第六章：建立列表頁面.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

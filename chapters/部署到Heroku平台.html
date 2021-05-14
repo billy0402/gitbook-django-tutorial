@@ -1,0 +1,558 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>部署到Heroku平台 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="API權限.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >部署到Heroku平台</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x90E8;&#x7F72;&#x5230;-heroku-&#x5E73;&#x53F0;"><b></b>&#x90E8;&#x7F72;&#x5230; Heroku &#x5E73;&#x53F0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;"><b></b>&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;"><b></b>&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#coresettingspy"><b></b>core/settings.py</a></li><li><span class="title-icon "></span><a href="#coreproductionsettingspy"><b></b>core/production_settings.py</a></li><li><span class="title-icon "></span><a href="#procfile"><b></b>Procfile</a></li><li><span class="title-icon "></span><a href="#runtimetxt"><b></b>runtime.txt</a></li><li><span class="title-icon "></span><a href="#staticgitkeep"><b></b>static/.gitkeep</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88DD;-heroku-cli"><b></b>&#x5B89;&#x88DD; Heroku CLI</a></li><li><span class="title-icon "></span><a href="#&#x9032;&#x884C;&#x90E8;&#x7F72;"><b></b>&#x9032;&#x884C;&#x90E8;&#x7F72;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x7684;-heroku-&#x6307;&#x4EE4;"><b></b>&#x5E38;&#x7528;&#x7684; Heroku &#x6307;&#x4EE4;</a></li></ul></ul></ul></div><a href="#&#x90E8;&#x7F72;&#x5230;-heroku-&#x5E73;&#x53F0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x90E8;&#x7F72;&#x5230;-heroku-&#x5E73;&#x53F0;"><a name="&#x90E8;&#x7F72;&#x5230;-heroku-&#x5E73;&#x53F0;" class="anchor-navigation-ex-anchor" href="#&#x90E8;&#x7F72;&#x5230;-heroku-&#x5E73;&#x53F0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x90E8;&#x7F72;&#x5230; Heroku &#x5E73;&#x53F0;</h1>
+<h2 id="&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;"><a name="&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8ABF;&#x6574;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x7528;&#x5C08;&#x6848;&#x5167;&#x5BB9;</h2>
+<p><a href="https://devcenter.heroku.com/articles/django-app-configuration" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x4EF6;</a></p>
+<h3 id="&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;"><a name="&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD;&#x6B63;&#x5F0F;&#x74B0;&#x5883;&#x9700;&#x6C42;&#x5957;&#x4EF6;</h3>
+<pre><code class="lang-shell">$ pipenv install gunicorn whitenoise dj-database-url psycopg2-binary
+</code></pre>
+<h3 id="coresettingspy"><a name="coresettingspy" class="anchor-navigation-ex-anchor" href="#coresettingspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/settings.py</h3>
+<pre><code class="lang-python">MIDDLEWARE = [
+    ...
+    <span class="hljs-string">&apos;whitenoise.middleware.WhiteNoiseMiddleware&apos;</span>,
+    ...
+]
+
+...
+
+<span class="hljs-comment"># Static files (CSS, JavaScript, Images)</span>
+<span class="hljs-comment"># https://docs.djangoproject.com/en/3.1/howto/static-files/</span>
+
+STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+
+STATICFILES_STORAGE = <span class="hljs-string">&apos;whitenoise.storage.CompressedManifestStaticFilesStorage&apos;</span>
+
+STATIC_ROOT = BASE_DIR / <span class="hljs-string">&apos;staticfiles&apos;</span>
+
+...
+
+<span class="hljs-comment"># Email</span>
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">with</span> open(BASE_DIR / <span class="hljs-string">&apos;core/email.txt&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> file:
+        email_data = file.readlines()
+        email_account, email_password = email_data
+
+        EMAIL_HOST_USER = email_account.strip()
+
+        EMAIL_HOST_PASSWORD = email_password.strip()
+<span class="hljs-keyword">except</span> FileNotFoundError:
+    print(<span class="hljs-string">&apos;core/email.txt is not exists.&apos;</span>)
+<span class="hljs-keyword">except</span> ValueError:
+    print(<span class="hljs-string">&apos;core/email.txt does not have email account or password.&apos;</span>)
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+    print(type(e))
+</code></pre>
+<h3 id="coreproductionsettingspy"><a name="coreproductionsettingspy" class="anchor-navigation-ex-anchor" href="#coreproductionsettingspy"><i class="fa fa-link" aria-hidden="true"></i></a>core/production_settings.py</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> dj_database_url
+
+<span class="hljs-keyword">from</span> .settings <span class="hljs-keyword">import</span> *
+
+DEBUG = <span class="hljs-keyword">False</span>
+ALLOWED_HOSTS = [<span class="hljs-string">&apos;coffee-shopp.herokuapp.com&apos;</span>]
+SECURE_PROXY_SSL_HEADER = (<span class="hljs-string">&apos;HTTP_X_FORWARDED_PROTO&apos;</span>, <span class="hljs-string">&apos;https&apos;</span>)
+
+DATABASES = {
+    <span class="hljs-string">&apos;default&apos;</span>: dj_database_url.config(conn_max_age=<span class="hljs-number">600</span>, ssl_require=<span class="hljs-keyword">True</span>),
+}
+</code></pre>
+<h3 id="procfile"><a name="procfile" class="anchor-navigation-ex-anchor" href="#procfile"><i class="fa fa-link" aria-hidden="true"></i></a>Procfile</h3>
+<pre><code class="lang-text">web: gunicorn core.wsgi
+</code></pre>
+<h3 id="runtimetxt"><a name="runtimetxt" class="anchor-navigation-ex-anchor" href="#runtimetxt"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://devcenter.heroku.com/articles/python-support#specifying-a-python-version" target="_blank">runtime.txt</a></h3>
+<pre><code class="lang-text">python-3.8.10
+</code></pre>
+<h3 id="staticgitkeep"><a name="staticgitkeep" class="anchor-navigation-ex-anchor" href="#staticgitkeep"><i class="fa fa-link" aria-hidden="true"></i></a>static/.gitkeep</h3>
+<h2 id="&#x5B89;&#x88DD;-heroku-cli"><a name="&#x5B89;&#x88DD;-heroku-cli" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88DD;-heroku-cli"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88DD; Heroku CLI</h2>
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">&#x7DB2;&#x5740;</a></li>
+</ul>
+<h2 id="&#x9032;&#x884C;&#x90E8;&#x7F72;"><a name="&#x9032;&#x884C;&#x90E8;&#x7F72;" class="anchor-navigation-ex-anchor" href="#&#x9032;&#x884C;&#x90E8;&#x7F72;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9032;&#x884C;&#x90E8;&#x7F72;</h2>
+<pre><code class="lang-shell"># &#x767B;&#x5165;&#x4F60;&#x7684; heroku &#x5E33;&#x865F;
+$ heroku login
+
+# &#x958B;&#x5230;&#x4F60;&#x7684;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4E0B; (&#x5982;&#x679C;&#x4E0D;&#x5728;&#x5C08;&#x6848;&#x8CC7;&#x6599;&#x593E;&#x4E0B;&#x7684;&#x8A71;)
+$ cd ${your_project_path}
+
+# &#x521D;&#x59CB;&#x5316; git (&#x5982;&#x679C;&#x5C1A;&#x672A;&#x5EFA;&#x7ACB;&#x904E; git &#x7684;&#x8A71;)
+$ git init
+
+# &#x5C07;&#x6240;&#x6709;&#x6A94;&#x6848;&#x7570;&#x52D5;&#x653E;&#x5165;&#x66AB;&#x5B58;&#x5340;
+$ git add .
+
+# &#x5C07;&#x66AB;&#x5B58;&#x5340;&#x7684;&#x7570;&#x52D5;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x5132;&#x5B58;&#x5EAB;
+$ git commit -am &quot;heroku set up&quot;
+
+# &#x5728;&#x5C08;&#x6848;&#x5167;&#x8A2D;&#x5B9A;&#x4F60;&#x7684; Heroku &#x9060;&#x7AEF;&#x4F4D;&#x7F6E;
+$ heroku git:remote -a coffee-shopp
+# &#x8DDF; Heroku CLI &#x5E6B;&#x4F60;&#x505A;&#x7684;&#x4E8B;&#x7B49;&#x6548;
+$ git remote add heroku https://git.heroku.com/${your_app_name}.git
+
+# &#x63A8;&#x4E0A; Heroku
+$ git push heroku master
+</code></pre>
+<pre><code class="lang-shell">Enumerating objects: 178, done.
+Counting objects: 100% (178/178), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (164/164), done.
+Writing objects: 100% (178/178), 27.48 KiB | 2.11 MiB/s, done.
+Total 178 (delta 86), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----&gt; Building on the Heroku-20 stack
+remote: -----&gt; Determining which buildpack to use for this app
+remote: -----&gt; Python app detected
+remote: -----&gt; Using Python version specified in runtime.txt
+remote: cp: cannot stat &apos;/tmp/build_e9295933/requirements.txt&apos;: No such file or directory
+remote: -----&gt; Installing python-3.8.10
+remote: -----&gt; Installing pip 20.2.4, setuptools 47.1.1 and wheel 0.36.2
+remote: -----&gt; Installing dependencies with Pipenv 2020.11.15
+remote:        Installing dependencies from Pipfile.lock (ac4619)...
+remote: -----&gt; Installing SQLite3
+remote: -----&gt; $ python manage.py collectstatic --noinput
+remote:        core/email.txt is not exists.
+remote:        161 static files copied to &apos;/tmp/build_e9295933/staticfiles&apos;, 505 post-processed.
+remote: 
+remote: -----&gt; Discovering process types
+remote:        Procfile declares types -&gt; web
+remote: 
+remote: -----&gt; Compressing...
+remote:        Done: 76M
+remote: -----&gt; Launching...
+remote:        Released v5
+remote:        https://coffee-shopp.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/coffee-shopp.git
+ * [new branch]      master -&gt; master
+</code></pre>
+<h3 id="&#x5E38;&#x7528;&#x7684;-heroku-&#x6307;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x7684;-heroku-&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7684;-heroku-&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x7684; Heroku &#x6307;&#x4EE4;</h3>
+<pre><code class="lang-shell"># &#x914D;&#x7F6E; Heroku &#x74B0;&#x5883;&#x8B8A;&#x6578;
+$ heroku config:set ENV_VAR=&apos;YOUR_ENV_VAR&apos;
+
+# &#x6301;&#x7E8C;&#x6253;&#x5370;&#x65E5;&#x8A8C;
+$ heroku logs --tail
+
+# &#x57F7;&#x884C; Heroku &#x9060;&#x7AEF;&#x7D42;&#x7AEF;&#x6A5F;
+$ heroku run ${your_command}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="API權限.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: API權限">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"部署到Heroku平台","level":"1.15","depth":1,"previous":{"title":"API權限","level":"1.14","depth":1,"path":"chapters/API權限.md","ref":"./chapters/API權限.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/部署到Heroku平台.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,594 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四章：加入版本控制 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第五章：建立資料庫.html" />
+    
+    
+    <link rel="prev" href="第三章：建立第一個DjangoApp.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第四章：加入版本控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;"><b></b>&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5728;-github-&#x5EFA;&#x7ACB;-repository"><b></b>&#x5728; GitHub &#x5EFA;&#x7ACB; Repository</a></li><li><span class="title-icon "></span><a href="#gitignore"><b></b>gitignore</a></li><ul><li><span class="title-icon "></span><a href="#&#x5EFA;&#x7ACB;-gitignore-&#x6A94;"><b></b>&#x5EFA;&#x7ACB; .gitignore &#x6A94;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165;-git"><b></b>&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165; Git</a></li><li><span class="title-icon "></span><a href="#&#x88DC;&#x5145;-&#x7D71;&#x4E00;-commit-&#x683C;&#x5F0F;"><b></b>[&#x88DC;&#x5145;] &#x7D71;&#x4E00; commit &#x683C;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x985E;&#x578B;&#x5217;&#x8868;"><b></b>&#x985E;&#x578B;&#x5217;&#x8868;</a></li></ul></ul></ul></div><a href="#&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;"><a name="&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x56DB;&#x7AE0;&#xFF1A;&#x52A0;&#x5165;&#x7248;&#x672C;&#x63A7;&#x5236;</h1>
+<p>Git &#x7684;&#x7528;&#x9014;&#x5728;&#x7B2C;&#x4E00;&#x7AE0;&#x5C31;&#x5DF2;&#x7D93;&#x63D0;&#x904E;&#x4E86;&#xFF0C;&#x9019;&#x908A;&#x76F4;&#x63A5;&#x958B;&#x59CB;&#x6559;&#x5927;&#x5BB6;&#x600E;&#x9EBC;&#x628A;&#x5C08;&#x6848;&#x63A8;&#x5230; GitHub &#x4E0A;&#x9762;&#x53BB;&#x3002;</p>
+<h2 id="&#x5728;-github-&#x5EFA;&#x7ACB;-repository"><a name="&#x5728;-github-&#x5EFA;&#x7ACB;-repository" class="anchor-navigation-ex-anchor" href="#&#x5728;-github-&#x5EFA;&#x7ACB;-repository"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728; GitHub &#x5EFA;&#x7ACB; Repository</h2>
+<p>Git &#x7684;&#x9060;&#x7AEF;&#x5132;&#x5B58;&#x5EAB;&#xFF0C;&#x9664;&#x4E86; GitHub &#x9084;&#x6709;&#x5F88;&#x591A;&#x5BB6;&#xFF0C;&#x4E0D;&#x904E;&#x958B;&#x6E90;&#x5C08;&#x6848;&#x6700;&#x5927;&#x5BB6;&#x76EE;&#x524D;&#x9084;&#x662F;&#x975E; GitHub &#x83AB;&#x5C6C;&#x3002;
+&#x9996;&#x5148;&#x6211;&#x5011;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x500B;&#x9060;&#x7AEF;&#x5132;&#x5B58;&#x5EAB;&#xFF0C;&#x7528;&#x4F86;&#x5B58;&#x653E;&#x6211;&#x5011;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x9019;&#x6A23;&#x5C31;&#x80FD;&#x96A8;&#x6642;&#x96A8;&#x5730;&#x5B58;&#x53D6;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x4E26;&#x8207;&#x5718;&#x968A;&#x7684;&#x5176;&#x4ED6;&#x4EBA;&#x5171;&#x540C;&#x9032;&#x884C;&#x7DE8;&#x8F2F;&#x8207;&#x7DAD;&#x8B77;&#x3002;</p>
+<ul>
+<li><p><a href="https://github.com/" target="_blank">GitHub &#x7DB2;&#x7AD9;</a></p>
+</li>
+<li><p>&#x958B;&#x555F; GitHub
+<img src="../images/CH4/4_1_1_&#x958B;&#x555F;GitHub&#x9996;&#x9801;.jpg" alt="&#x958B;&#x555F;GitHub&#x9996;&#x9801;"></p>
+</li>
+<li>&#x8A3B;&#x518A; GitHub &#x5E33;&#x865F;
+<img src="../images/CH4/4_1_2_&#x8A3B;&#x518A;GitHub&#x5E33;&#x865F;.jpg" alt="&#x8A3B;&#x518A; GitHub &#x5E33;&#x865F;"></li>
+<li>&#x767B;&#x5165; GitHub
+<img src="../images/CH4/4_1_3_&#x767B;&#x5165;GitHub.jpg" alt="&#x767B;&#x5165; GitHub"></li>
+<li>&#x9EDE;&#x9078;&#x5EFA;&#x7ACB;&#x65B0;&#x7684; Repository
+<img src="../images/CH4/4_1_4_&#x9EDE;&#x9078;&#x5EFA;&#x7ACB;&#x65B0;&#x7684;Repository.jpg" alt="&#x9EDE;&#x9078;&#x5EFA;&#x7ACB;&#x65B0;&#x7684; Repository"></li>
+<li>&#x5EFA;&#x7ACB; Repository
+<img src="../images/CH4/4_1_5_&#x5EFA;&#x7ACB;Repository.jpg" alt="&#x5EFA;&#x7ACB; Repository"></li>
+<li>&#x5EFA;&#x7ACB;&#x6210;&#x529F;&#x756B;&#x9762;
+<img src="../images/CH4/4_1_6_&#x5EFA;&#x7ACB;&#x6210;&#x529F;&#x756B;&#x9762;.jpg" alt="&#x5EFA;&#x7ACB; Repository"></li>
+</ul>
+<h2 id="gitignore"><a name="gitignore" class="anchor-navigation-ex-anchor" href="#gitignore"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://github.com/github/gitignore" target="_blank">gitignore</a></h2>
+<p>&#x6211;&#x5011;&#x5728;&#x958B;&#x767C;&#x5C08;&#x6848;&#x6642;&#xFF0C;&#x5FC5;&#x9808;&#x8981;&#x6392;&#x9664;&#x4E00;&#x4E9B;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x6A94;&#x6848;&#x3002;
+&#x9996;&#x5148;&#x4E00;&#x5B9A;&#x8981;&#x6392;&#x9664;&#x7684;&#x662F;&#x6A5F;&#x5BC6;&#x8CC7;&#x8A0A;&#xFF0C;&#x8ACB;&#x4E0D;&#x8981;&#x628A;&#x5E33;&#x865F;&#x5BC6;&#x78BC;&#x63A8;&#x5230;&#x516C;&#x958B;&#x7684;&#x5132;&#x5B58;&#x5EAB;&#xFF0C;&#x975E;&#x5E38;&#x5371;&#x96AA;&#xFF0C;&#x53EF;&#x80FD;&#x6703;&#x4F7F;&#x4F60;&#x7684;&#x7CFB;&#x7D71;&#x88AB;&#x653B;&#x64CA;&#x3002;
+&#x518D;&#x4F86;&#x662F;&#x865B;&#x64EC;&#x74B0;&#x5883;&#x8DDF;&#x5957;&#x4EF6;&#x7B49;&#x7B49;&#xFF0C;&#x9019;&#x4E9B;&#x96A8;&#x6642;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x8A2D;&#x5B9A;&#x6A94;&#x91CD;&#x5EFA;&#x6216;&#x7DB2;&#x8DEF;&#x4E0A;&#x6293;&#x53D6;&#x3002;
+&#x5B83;&#x5011;&#x4E0D;&#x4F46;&#x80A5;&#x5927;&#xFF0C;&#x800C;&#x4E14;&#x91CD;&#x8907;&#x6027;&#x5F88;&#x9AD8;&#xFF0C;&#x53C8;&#x4E5F;&#x8A31;&#x4F60;&#x6C38;&#x9060;&#x60F3;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7248;&#x7684;&#xFF0C;&#x90A3;&#x53C8;&#x4F55;&#x5FC5;&#x628A;&#x820A;&#x7248;&#x7684;&#x5B58;&#x8457;&#x6D6A;&#x8CBB;&#x7A7A;&#x9593;&#x5462;&#x3002;
+&#x9084;&#x6709;&#x5176;&#x4ED6;&#x8A31;&#x591A;&#x4F60;&#x4E0D;&#x60F3;&#x6216;&#x4E0D;&#x61C9;&#x8A72;&#x4E0A;&#x50B3;&#x7684;&#x6A94;&#x6848;&#x90FD;&#x80FD;&#x5728; gitignore &#x5B9A;&#x7FA9;&#xFF0C;&#x8B93; Git &#x81EA;&#x52D5;&#x5E6B;&#x4F60;&#x6514;&#x622A;&#x4E0B;&#x4F86;&#x3002;</p>
+<p>GitHub &#x81EA;&#x5DF1;&#x672C;&#x8EAB;&#x6709;&#x5728;&#x7DAD;&#x8B77;&#x4E00;&#x500B; gitignore &#x5C08;&#x6848;&#xFF0C;&#x88E1;&#x9762;&#x5B9A;&#x7FA9;&#x4E86;&#x5404;&#x7A2E;&#x8A9E;&#x8A00;&#x5E38;&#x898B;&#x7684; gitignore &#x5167;&#x5BB9;&#x3002;
+Python &#x7576;&#x7136;&#x4E5F;&#x6709;&#xFF0C;&#x4F46;&#x4ED6;&#x6C92;&#x6709;&#x5E6B;&#x6211;&#x5011;&#x5B9A;&#x7FA9;&#x6703;&#x4F7F;&#x7528;&#x54EA;&#x4E9B; IDE&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x81EA;&#x5DF1;&#x88DC;&#x4E0A; IDE &#x8A2D;&#x5B9A;&#x6A94;&#x7684;&#x5167;&#x5BB9;&#x3002;</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore" target="_blank">For Python</a></li>
+</ul>
+<pre><code class="lang-text"># macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+</code></pre>
+<h3 id="&#x5EFA;&#x7ACB;-gitignore-&#x6A94;"><a name="&#x5EFA;&#x7ACB;-gitignore-&#x6A94;" class="anchor-navigation-ex-anchor" href="#&#x5EFA;&#x7ACB;-gitignore-&#x6A94;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EFA;&#x7ACB; .gitignore &#x6A94;</h3>
+<p><img src="../images/CH4/4_2_1_&#x5EFA;&#x7ACB;gitignore&#x6A94;.jpg" alt="&#x5EFA;&#x7ACB; .gitignore &#x6A94;"></p>
+<h2 id="&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165;-git"><a name="&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165;-git" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165;-git"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x5C08;&#x6848;&#x4E2D;&#x52A0;&#x5165; Git</h2>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x6211;&#x5011;&#x6703;&#x5728;&#x5C08;&#x6848;&#x88E1;&#x9762;&#x5EFA;&#x7ACB; Git &#x7684;&#x5167;&#x5BB9;&#xFF0C;&#x6700;&#x5F8C;&#x63A8;&#x4E0A; GitHub &#x7684;&#x9060;&#x7AEF;&#x5132;&#x5B58;&#x5EAB;&#x3002;
+&#x9019;&#x908A;&#x6703;&#x540C;&#x6642;&#x5C55;&#x793A;&#x547D;&#x4EE4;&#x5217;&#x7684;&#x6307;&#x4EE4;&#x8DDF; Fork &#x7684;&#x756B;&#x9762;&#xFF0C;&#x5169;&#x908A;&#x7684;&#x6548;&#x679C;&#x662F;&#x7B49;&#x6548;&#x7684;&#x3002;
+&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E; Fork &#x7684;&#x756B;&#x9762;&#xFF0C;&#x8B93;&#x4F60;&#x4E86;&#x89E3;&#x5230; Git &#x7684;&#x6307;&#x4EE4;&#x5230;&#x5E95;&#x505A;&#x4E86;&#x4EC0;&#x9EBC;&#x4E8B;&#x3002;</p>
+<ul>
+<li><a href="https://gitbook.tw/" target="_blank">Git &#x6559;&#x5B78;</a></li>
+</ul>
+<p><img src="../images/CH4/4_3_1_Git&#x72C0;&#x614B;&#x8AAA;&#x660E;.jpg" alt="Git &#x72C0;&#x614B;&#x8AAA;&#x660E;"></p>
+<ol>
+<li><p>&#x958B;&#x555F; Fork
+<img src="../images/CH4/4_3_2_&#x958B;&#x555F;Fork.jpg" alt="&#x958B;&#x555F; Fork"></p>
+</li>
+<li><p>&#x958B;&#x555F;&#x672C;&#x5730;&#x5C08;&#x6848;</p>
+</li>
+</ol>
+<pre><code class="lang-shell">$ cd ${your_project_path}
+</code></pre>
+<p><img src="../images/CH4/4_3_3_&#x958B;&#x555F;&#x672C;&#x5730;&#x5C08;&#x6848;.jpg" alt="&#x958B;&#x555F;&#x672C;&#x5730;&#x5C08;&#x6848;"></p>
+<ol>
+<li>&#x5EFA;&#x7ACB; .git &#x8CC7;&#x6599;&#x593E;</li>
+</ol>
+<pre><code class="lang-shell">$ git init
+</code></pre>
+<p><img src="../images/CH4/4_3_4_git_init.jpg" alt="git init"></p>
+<ol>
+<li>&#x5C07;&#x6240;&#x6709;&#x6A94;&#x6848;&#x7570;&#x52D5;&#x653E;&#x5165;&#x66AB;&#x5B58;&#x5340; (Staging Area)</li>
+</ol>
+<pre><code class="lang-shell">$ git add .
+</code></pre>
+<p><img src="../images/CH4/4_3_5_git_add.jpg" alt="git add"></p>
+<ol>
+<li>&#x5C07;&#x66AB;&#x5B58;&#x5340;&#x7684;&#x7570;&#x52D5;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x5132;&#x5B58;&#x5EAB; (Repository)</li>
+</ol>
+<pre><code class="lang-shell">$ git commit -m &quot;Initial commit&quot;
+</code></pre>
+<p><img src="../images/CH4/4_3_6_git_commit.jpg" alt="git commit"></p>
+<ol>
+<li>&#x5EFA;&#x7ACB;&#x672C;&#x5730;&#x5206;&#x652F; master</li>
+</ol>
+<pre><code class="lang-shell">$ git branch -M master
+</code></pre>
+<p><img src="../images/CH4/4_3_7_git_branch.jpg" alt="git branch"></p>
+<ol>
+<li>&#x65B0;&#x589E;&#x9060;&#x7AEF;&#x5132;&#x5B58;&#x5EAB;&#x7BC0;&#x9EDE;</li>
+</ol>
+<pre><code class="lang-shell">$ git remote add origin ${your_remote_repository_url}
+</code></pre>
+<p><img src="../images/CH4/4_3_8_git_remote_add.jpg" alt="git remote add">
+<img src="../images/CH4/4_3_9_git_remote_add_url.jpg" alt="git remote add url"></p>
+<ol>
+<li>&#x5C07;&#x672C;&#x5730;&#x7684; master &#x5206;&#x652F; &#x63A8;&#x4E0A; origin &#x7684;&#x9060;&#x7AEF;&#x4F4D;&#x7F6E;</li>
+</ol>
+<pre><code class="lang-shell"># &#x9060;&#x7AEF;&#x6C92;&#x6709;&#x5C31;&#x5EFA;&#x7ACB;&#x540C;&#x540D;&#x5206;&#x652F;&#xFF0C;&#x6709;&#x5247;&#x66F4;&#x65B0;&#x5206;&#x652F;&#x81F3;&#x6700;&#x65B0;&#x9032;&#x5EA6;
+# -u --set-upstream &#x8A2D;&#x5B9A;&#x4E0A;&#x6E38; (&#x9060;&#x7AEF;&#x7684;&#x9810;&#x8A2D;&#x503C;)
+$ git push -u origin master
+</code></pre>
+<p><img src="../images/CH4/4_3_10_git_push.jpg" alt="git push"></p>
+<ol>
+<li>&#x6210;&#x529F;&#x63A8;&#x4E0A; GitHub
+<img src="../images/CH4/4_3_11_&#x6210;&#x529F;&#x63A8;&#x4E0A;GitHub.jpg" alt="&#x6210;&#x529F;&#x63A8;&#x4E0A; GitHub"></li>
+</ol>
+<h2 id="&#x88DC;&#x5145;-&#x7D71;&#x4E00;-commit-&#x683C;&#x5F0F;"><a name="&#x88DC;&#x5145;-&#x7D71;&#x4E00;-commit-&#x683C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x88DC;&#x5145;-&#x7D71;&#x4E00;-commit-&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x88DC;&#x5145;] &#x7D71;&#x4E00; commit &#x683C;&#x5F0F;</h2>
+<p>&#x5927;&#x5BB6;&#x5728;&#x64B0;&#x5BEB; commit &#x6642;&#xFF0C;&#x4E00;&#x5B9A;&#x6BD4;&#x7A0B;&#x5F0F;&#x78BC;&#x8981;&#x7D71;&#x4E00;&#x66F4;&#x52A0;&#x56F0;&#x96E3;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x8A9E;&#x8A00;&#x3001;&#x6587;&#x6CD5;&#x3001;&#x7B26;&#x865F;&#x90FD;&#x4E0D;&#x8DB3;&#x70BA;&#x5947;&#x3002;
+&#x4E0B;&#x9762;&#x63A8;&#x85A6;&#x4E00;&#x500B; commit &#x683C;&#x5F0F;&#xFF0C;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x7D71;&#x4E00;&#x4EE5;&#x5916;&#xFF0C;&#x9084;&#x80FD;&#x5920;&#x904E; commit &#x4E86;&#x89E3;&#x9019;&#x6B21;&#x7570;&#x52D5;&#x662F;&#x4EC0;&#x9EBC;&#x52D5;&#x4F5C;&#xFF0C;&#x7BC4;&#x570D;&#x591A;&#x5927;&#x3002;
+&#x4E26;&#x4E14;&#x56E0;&#x70BA;&#x6703;&#x5340;&#x5206;&#x52D5;&#x4F5C;&#xFF0C;&#x7121;&#x6CD5;&#x4E00;&#x6B21;&#x628A;&#x4E00;&#x5927;&#x7968;&#x7A0B;&#x5F0F;&#x78BC;&#x80E1;&#x4E82;&#x63A8;&#x4E0A;&#x4F86;&#xFF0C;&#x800C;&#x5931;&#x53BB;&#x4E86; commit &#x6A19;&#x8A18;&#x8FA8;&#x8B58;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<ul>
+<li><a href="https://github.com/streamich/git-cz" target="_blank">git-cz</a></li>
+</ul>
+<blockquote>
+<p>&#x683C;&#x5F0F;: &lt;&#x985E;&#x578B;&gt;(&lt;&#x7BC4;&#x570D;&gt;): &#x4FEE;&#x6B63;&#x5167;&#x5BB9;</p>
+<p>&#x7BC4;&#x4F8B;: feat(coffees): add index page</p>
+</blockquote>
+<h3 id="&#x985E;&#x578B;&#x5217;&#x8868;"><a name="&#x985E;&#x578B;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x985E;&#x578B;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x985E;&#x578B;&#x5217;&#x8868;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x985E;&#x578B;</th>
+<th>&#x542B;&#x7FA9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test</td>
+<td>&#x6DFB;&#x52A0;&#x7F3A;&#x5C11;&#x7684;&#x6E2C;&#x8A66;</td>
+</tr>
+<tr>
+<td>feat</td>
+<td>&#x65B0;&#x589E;&#x4E00;&#x500B;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td>fix</td>
+<td>&#x4FEE;&#x6B63;&#x4E00;&#x500B;&#x932F;&#x8AA4;</td>
+</tr>
+<tr>
+<td>chore</td>
+<td>&#x8B8A;&#x66F4;&#x5EFA;&#x69CB;&#x6D41;&#x7A0B;&#x6216;&#x8F14;&#x52A9;&#x5DE5;&#x5177;</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>&#x50C5;&#x4FEE;&#x6539;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>refactor</td>
+<td>&#x4FEE;&#x6539;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x4F46;&#x6C92;&#x6709;&#x65B0;&#x529F;&#x80FD;&#x4E5F;&#x6C92;&#x6709;&#x932F;&#x8AA4;&#x4FEE;&#x6B63;</td>
+</tr>
+<tr>
+<td>style</td>
+<td>&#x6A19;&#x8A18;, &#x7A7A;&#x683C;, &#x6392;&#x7248;, &#x7F3A;&#x5C11;&#x5206;&#x865F;...</td>
+</tr>
+<tr>
+<td>ci</td>
+<td>CI &#x76F8;&#x95DC;&#x7684;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>perf</td>
+<td>&#x4FEE;&#x6539;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x7528;&#x4F86;&#x63D0;&#x5347;&#x6548;&#x80FD;</td>
+</tr>
+<tr>
+<td>release</td>
+<td>&#x65B0;&#x589E;&#x4E00;&#x500B;&#x767C;&#x5E03;&#x7248;&#x7684; commit</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第三章：建立第一個DjangoApp.html" class="navigation navigation-prev " aria-label="Previous page: 第三章：建立第一個 Django App">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第五章：建立資料庫.html" class="navigation navigation-next " aria-label="Next page: 第五章：建立資料庫">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四章：加入版本控制","level":"1.5","depth":1,"next":{"title":"第五章：建立資料庫","level":"1.6","depth":1,"path":"chapters/第五章：建立資料庫.md","ref":"./chapters/第五章：建立資料庫.md","articles":[]},"previous":{"title":"第三章：建立第一個 Django App","level":"1.4","depth":1,"path":"chapters/第三章：建立第一個DjangoApp.md","ref":"./chapters/第三章：建立第一個DjangoApp.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第四章：加入版本控制.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

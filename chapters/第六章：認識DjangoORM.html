@@ -1,0 +1,710 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第六章：認識 Django ORM · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第六章：建立列表頁面.html" />
+    
+    
+    <link rel="prev" href="第五章：建立資料庫.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="第一章：環境建置.html">
+            
+                <a href="第一章：環境建置.html">
+            
+                    
+                    第一章：環境建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="第二章：建立Django專案.html">
+            
+                <a href="第二章：建立Django專案.html">
+            
+                    
+                    第二章：建立 Django 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第三章：建立第一個DjangoApp.html">
+            
+                <a href="第三章：建立第一個DjangoApp.html">
+            
+                    
+                    第三章：建立第一個 Django App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第四章：加入版本控制.html">
+            
+                <a href="第四章：加入版本控制.html">
+            
+                    
+                    第四章：加入版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第五章：建立資料庫.html">
+            
+                <a href="第五章：建立資料庫.html">
+            
+                    
+                    第五章：建立資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="第六章：認識DjangoORM.html">
+            
+                <a href="第六章：認識DjangoORM.html">
+            
+                    
+                    第六章：認識 Django ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第六章：建立列表頁面.html">
+            
+                <a href="第六章：建立列表頁面.html">
+            
+                    
+                    第六章：建立列表頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第七章：建立細項頁面.html">
+            
+                <a href="第七章：建立細項頁面.html">
+            
+                    
+                    第七章：建立細項頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第八章：建立新增頁面.html">
+            
+                <a href="第八章：建立新增頁面.html">
+            
+                    
+                    第八章：建立新增頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第九章：建立編輯頁面.html">
+            
+                <a href="第九章：建立編輯頁面.html">
+            
+                    
+                    第九章：建立編輯頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第十章：建立刪除頁面.html">
+            
+                <a href="第十章：建立刪除頁面.html">
+            
+                    
+                    第十章：建立刪除頁面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十一章：建立RESTAPI.html">
+            
+                <a href="第十一章：建立RESTAPI.html">
+            
+                    
+                    第十一章：建立 REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="API權限.html">
+            
+                <a href="API權限.html">
+            
+                    
+                    API權限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="部署到Heroku平台.html">
+            
+                <a href="部署到Heroku平台.html">
+            
+                    
+                    部署到Heroku平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第六章：認識 Django ORM</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58;-django-orm"><b></b>&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58; Django ORM</a></li><ul><li><span class="title-icon "></span><a href="#&#x958B;&#x555F;-django-shell"><b></b>&#x958B;&#x555F; Django Shell</a></li><li><span class="title-icon "></span><a href="#import"><b></b>import</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x55AE;&#x7B46;-insert-one"><b></b>&#x65B0;&#x589E;&#x55AE;&#x7B46; (INSERT ONE)</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599;-&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;"><b></b>&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599; (&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;)</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;"><b></b>&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;</a></li></ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x8A62;&#x591A;&#x7B46;-select-all"><b></b>&#x67E5;&#x8A62;&#x591A;&#x7B46; (SELECT ALL)</a></li><ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;"><b></b>&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;-orm-&#x771F;&#x6B63;&#x4E0B;&#x7684;-sql-&#x8A9E;&#x6CD5;"><b></b>&#x67E5;&#x770B; ORM &#x771F;&#x6B63;&#x4E0B;&#x7684; SQL &#x8A9E;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;"><b></b>&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;</a></li></ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x8A62;&#x55AE;&#x7B46;-select-one"><b></b>&#x67E5;&#x8A62;&#x55AE;&#x7B46; (SELECT ONE)</a></li><li><span class="title-icon "></span><a href="#&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-interger-field"><b></b>&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE; (SELECT WITH INTERGER FIELD)</a></li><li><span class="title-icon "></span><a href="#&#x6392;&#x5E8F;-orderby"><b></b>&#x6392;&#x5E8F; (ORDER_BY)</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x8CC7;&#x6599;-update"><b></b>&#x66F4;&#x65B0;&#x8CC7;&#x6599; (UPDATE)</a></li><li><span class="title-icon "></span><a href="#&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-datetime-field"><b></b>&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE; (SELECT WITH DATETIME FIELD)</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6;-select-wiht-multi-condition"><b></b>&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6; (SELECT WIHT MULTI CONDITION)</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x591A;&#x7B46;-update-many"><b></b>&#x66F4;&#x65B0;&#x591A;&#x7B46; (UPDATE MANY)</a></li><li><span class="title-icon "></span><a href="#&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599;-add-many-to-mant-field"><b></b>&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599; (ADD MANY TO MANT Field)</a></li><li><span class="title-icon "></span><a href="#&#x522A;&#x9664;-delete"><b></b>&#x522A;&#x9664; (DELETE)</a></li></ul></ul></div><a href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58;-django-orm" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58;-django-orm"><a name="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58;-django-orm" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58;-django-orm"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x8A8D;&#x8B58; Django ORM</h1>
+<h2 id="&#x958B;&#x555F;-django-shell"><a name="&#x958B;&#x555F;-django-shell" class="anchor-navigation-ex-anchor" href="#&#x958B;&#x555F;-django-shell"><i class="fa fa-link" aria-hidden="true"></i></a>&#x958B;&#x555F; Django Shell</h2>
+<p>Django Shell &#x662F; Django &#x63D0;&#x4F9B;&#x985E;&#x4F3C; IPython &#x7684;&#x4E92;&#x52D5;&#x5F0F;&#x4ECB;&#x9762;&#xFF0C;&#x6703;&#x5C0D;&#x65BC;&#x4F60;&#x8F38;&#x5165;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x76E1;&#x91CF;&#x7522;&#x751F;&#x7ACB;&#x5373;&#x7684;&#x56DE;&#x61C9;&#x3002;
+&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E; Django Shell &#x4F86;&#x6E2C;&#x8A66;&#x6240;&#x5BEB;&#x7684;&#x7A0B;&#x5F0F;&#x662F;&#x5426;&#x80FD;&#x5920;&#x6B63;&#x78BA;&#x57F7;&#x884C;&#xFF0C;&#x57FA;&#x672C;&#x4E0A; Django &#x7684;&#x884C;&#x70BA;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x9019;&#x88E1;&#x60F3;&#x8FA6;&#x6CD5;&#x91CD;&#x73FE;&#x3002;
+Django Shell &#x96D6;&#x7136;&#x65B9;&#x4FBF;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x4E26;&#x4E0D;&#x6703;&#x5E6B;&#x4F60;&#x628A;&#x8F38;&#x5165;&#x7684;&#x6771;&#x897F;&#x8F38;&#x51FA;&#x51FA;&#x4F86;&#xFF0C;&#x6240;&#x4EE5;&#x6E2C;&#x8A66;&#x5B8C;&#x8A18;&#x5F97;&#x628A;&#x9700;&#x8981;&#x7684;&#x90E8;&#x5206;&#x8907;&#x88FD;&#x56DE;&#x4F60;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x7576;&#x4E2D;&#x3002;
+&#x6211;&#x5011;&#x5728;&#x9019;&#x908A;&#x4E3B;&#x8981;&#x662F;&#x900F;&#x904E; Django Shell &#x4F86;&#x5B78;&#x7FD2; Django ORM &#x7684;&#x8A9E;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-shell">$ python manage.py shell
+</code></pre>
+<h2 id="import"><a name="import" class="anchor-navigation-ex-anchor" href="#import"><i class="fa fa-link" aria-hidden="true"></i></a>import</h2>
+<p>Django Shell &#x6BCF;&#x6B21;&#x91CD;&#x65B0;&#x958B;&#x555F;&#x6642;&#x90FD;&#x662F;&#x5168;&#x65B0;&#x7684;&#x72C0;&#x614B;&#xFF0C;&#x6703;&#x628A;&#x8A18;&#x61B6;&#x9AD4;&#x6E05;&#x7A7A;&#xFF0C;&#x6240;&#x4EE5;&#x8ACB;&#x8A18;&#x5F97;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x91CD;&#x65B0;&#x9032;&#x884C; import&#x3002;
+&#x9019;&#x88E1;&#x4E3B;&#x8981;&#x6703;&#x4F7F;&#x7528;&#x5230; Coffee &#x7684;&#x6240;&#x6709; model&#x3002;
+&#x91CD;&#x65B0;&#x9032;&#x5165;&#x6642;&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x65B9;&#x5411;&#x9375;&#x53BB;&#x5C0B;&#x627E;&#x6B77;&#x53F2;&#x8F38;&#x5165;&#xFF0C;&#x5FD8;&#x8A18;&#x8F38;&#x51FA;&#x6642;&#x4E5F;&#x8A31;&#x6709;&#x6A5F;&#x6703;&#x627E;&#x56DE;&#x4F86;&#xFF0C;&#x4E5F;&#x65B9;&#x4FBF;&#x6BCF;&#x6B21;&#x91CD;&#x8907;&#x9032;&#x884C;&#x6216;&#x662F;&#x505A;&#x5230;&#x4E00;&#x534A;&#x7684;&#x52D5;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> coffees.models <span class="hljs-keyword">import</span> *
+</code></pre>
+<p><code>&gt;&gt;&gt;</code> &#x662F;&#x4EE3;&#x8868;&#x8981;&#x8F38;&#x5165;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x7528;&#x4F86;&#x8DDF;&#x4E0B;&#x65B9;&#x7684;&#x56DE;&#x61C9;&#x505A;&#x5340;&#x5206;&#xFF0C;&#x6E2C;&#x8A66;&#x6642;&#x8ACB;&#x8F38;&#x5165;&#x7B26;&#x865F;&#x5F8C;&#x65B9;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x90E8;&#x5206;&#x3002;
+&#x4E0A;&#x65B9;&#x7684; SQL &#x6307;&#x4EE4;&#xFF0C;&#x70BA;&#x6559;&#x5B78;&#x7528;&#x9014;&#xFF0C;&#x8868;&#x793A;&#x4E0B;&#x9762;&#x7684; ORM &#x7B49;&#x6548;&#x7684; SQL &#x8A9E;&#x6CD5;&#xFF0C;&#x5BE6;&#x969B;&#x4E0A;&#x4E0D;&#x6703;&#x986F;&#x793A;&#x3002;
+&#x53EA;&#x6709;&#x67E5;&#x8A62;&#x900F;&#x904E; print(qs.query)&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x770B;&#x5230;&#x67E5;&#x8A62;&#x7684; SQL&#xFF0C;&#x9019;&#x90E8;&#x5206;&#x4E0B;&#x9762;&#x6703;&#x63D0;&#x5230;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x4EE5;&#x5168;&#x65B0;&#x7684;&#x8CC7;&#x6599;&#x70BA;&#x57FA;&#x5E95;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x585E;&#x5165;&#x904E;&#x8CC7;&#x6599;&#xFF0C;&#x53EF;&#x80FD;&#x6703;&#x6709;&#x6B04;&#x4F4D;&#x4E0D;&#x80FD;&#x91CD;&#x8907;&#xFF0C;&#x6216;&#x662F;&#x56DE;&#x61C9;&#x4E0D;&#x76F8;&#x540C;&#x7684;&#x554F;&#x984C;&#x3002;</p>
+<h2 id="&#x65B0;&#x589E;&#x55AE;&#x7B46;-insert-one"><a name="&#x65B0;&#x589E;&#x55AE;&#x7B46;-insert-one" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x55AE;&#x7B46;-insert-one"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x589E;&#x55AE;&#x7B46; (INSERT ONE)</h2>
+<h3 id="&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599;-&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;"><a name="&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599;-&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599;-&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x589E;&#x7522;&#x5730;&#x8CC7;&#x6599; (&#x70BA;&#x5496;&#x5561;&#x8C46;&#x7684;&#x7522;&#x5730;&#x95DC;&#x806F;&#x505A;&#x6E96;&#x5099;)</h3>
+<p>&#x57FA;&#x672C;&#x4E0A;&#x65B0;&#x589E;&#x5B8C;&#x6703;&#x76F4;&#x63A5;&#x56DE;&#x50B3;&#x65B0;&#x589E;&#x5F8C;&#x5C0D;&#x61C9;&#x7684; Model &#x7269;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-python">INSERT INTO <span class="hljs-string">&quot;coffees_originplace&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:46:34.361803&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:46:34.361866&apos;</span>, <span class="hljs-string">&apos;&#x62C9;&#x4E01;&#x7F8E;&#x6D32;&apos;</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>origin_place = OriginPlace.objects.create(name=<span class="hljs-string">&apos;&#x62C9;&#x4E01;&#x7F8E;&#x6D32;&apos;</span>)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>origin_place
+&lt;OriginPlace: &#x62C9;&#x4E01;&#x7F8E;&#x6D32;&gt;
+</code></pre>
+<h3 id="&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;"><a name="&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x589E;&#x4E09;&#x7B46;&#x5496;&#x5561;&#x8C46;&#x8CC7;&#x6599;</h3>
+<p>&#x95DC;&#x806F;&#x7269;&#x4EF6;&#x8981;&#x50B3;&#x5165;&#x5C0D;&#x61C9;&#x7684; Model &#x7269;&#x4EF6;&#xFF0C;ORM &#x6703;&#x5E6B;&#x81EA;&#x52D5;&#x628A;&#x95DC;&#x806F;&#x7269;&#x4EF6;&#x7684; Primary Key &#x585E;&#x5165; Foreign Key&#x3002;</p>
+<pre><code class="lang-python">INSERT INTO <span class="hljs-string">&quot;coffees_coffee&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;roast&quot;</span>, <span class="hljs-string">&quot;price&quot;</span>, <span class="hljs-string">&quot;origin_place_id&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:47:12.180462&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:47:12.180506&apos;</span>, <span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E00;&#x865F;&apos;</span>, <span class="hljs-string">&apos;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>, <span class="hljs-string">&apos;Medium&apos;</span>, <span class="hljs-number">300</span>, <span class="hljs-number">1</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1 = Coffee.objects.create(
+    name=<span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E00;&#x865F;&apos;</span>,
+    description=<span class="hljs-string">&apos;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>,
+    roast=<span class="hljs-string">&apos;Medium&apos;</span>,
+    price=<span class="hljs-number">300</span>,
+    origin_place=origin_place,
+)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1
+&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;
+
+INSERT INTO <span class="hljs-string">&quot;coffees_coffee&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;roast&quot;</span>, <span class="hljs-string">&quot;price&quot;</span>, <span class="hljs-string">&quot;origin_place_id&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:47:28.655375&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:47:28.655420&apos;</span>, <span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E8C;&#x865F;&apos;</span>, <span class="hljs-string">&apos;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>, <span class="hljs-string">&apos;Medium&apos;</span>, <span class="hljs-number">350</span>, <span class="hljs-number">1</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee2 = Coffee.objects.create(
+    name=<span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E8C;&#x865F;&apos;</span>,
+    description=<span class="hljs-string">&apos;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>,
+    roast=<span class="hljs-string">&apos;Medium&apos;</span>,
+    price=<span class="hljs-number">350</span>,
+    origin_place=origin_place,
+)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee2
+&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;
+
+INSERT INTO <span class="hljs-string">&quot;coffees_coffee&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;roast&quot;</span>, <span class="hljs-string">&quot;price&quot;</span>, <span class="hljs-string">&quot;origin_place_id&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:47:54.853298&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:47:54.853341&apos;</span>, <span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E09;&#x865F;&apos;</span>, <span class="hljs-string">&apos;&#x9019;&#x662F;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>, <span class="hljs-string">&apos;Medium&apos;</span>, <span class="hljs-number">400</span>, <span class="hljs-number">1</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee3 = Coffee.objects.create(
+    name=<span class="hljs-string">&apos;&#x5496;&#x5561;&#x4E09;&#x865F;&apos;</span>,
+    description=<span class="hljs-string">&apos;&#x9019;&#x662F;&#x4E00;&#x7A2E;&#x5496;&#x5561;&#x8C46;&apos;</span>,
+    roast=<span class="hljs-string">&apos;Medium&apos;</span>,
+    price=<span class="hljs-number">400</span>,
+    origin_place=origin_place,
+)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee3
+&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;
+</code></pre>
+<h2 id="&#x67E5;&#x8A62;&#x591A;&#x7B46;-select-all"><a name="&#x67E5;&#x8A62;&#x591A;&#x7B46;-select-all" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8A62;&#x591A;&#x7B46;-select-all"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8A62;&#x591A;&#x7B46; (SELECT ALL)</h2>
+<h3 id="&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;"><a name="&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8A62;&#x5168;&#x90E8;&#x8CC7;&#x6599;</h3>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>qs = Coffee.objects.all()
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>qs
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+</code></pre>
+<h3 id="&#x67E5;&#x770B;-orm-&#x771F;&#x6B63;&#x4E0B;&#x7684;-sql-&#x8A9E;&#x6CD5;"><a name="&#x67E5;&#x770B;-orm-&#x771F;&#x6B63;&#x4E0B;&#x7684;-sql-&#x8A9E;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;-orm-&#x771F;&#x6B63;&#x4E0B;&#x7684;-sql-&#x8A9E;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B; ORM &#x771F;&#x6B63;&#x4E0B;&#x7684; SQL &#x8A9E;&#x6CD5;</h3>
+<p>&#x53EA;&#x6709;&#x67E5;&#x8A62;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x900F;&#x904E; print(qs.query) &#x67E5;&#x770B;&#x6240;&#x4E0B;&#x7684; Query&#xFF0C;&#x56E0;&#x70BA;&#x589E;&#x522A;&#x6539;&#x6703;&#x76F4;&#x63A5;&#x56DE;&#x50B3;&#x4FEE;&#x6539;&#x5F8C;&#x7684;&#x8CC7;&#x8A0A;&#x6216;&#x7269;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>qs.query
+&lt;django.db.models.sql.query.Query object at <span class="hljs-number">0x102f92a90</span>&gt;
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(Coffee.objects.all().query)
+SELECT <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;updated_at&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;name&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;description&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;roast&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span>,
+       <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;origin_place_id&quot;</span>
+FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span>;
+</code></pre>
+<h3 id="&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;"><a name="&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8A62;&#x7247;&#x6BB5;&#x8CC7;&#x6599;</h3>
+<p>QuerySet &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x900F;&#x904E;&#x5207;&#x7247;&#x7684;&#x8A9E;&#x6CD5;&#x53D6;&#x5F97;&#x7279;&#x5B9A;&#x7684;&#x7247;&#x6BB5;&#x3002;
+&#x4F46; [-1] &#x9019;&#x7A2E;&#x53CD;&#x5411;&#x5207;&#x7247;&#x7528;&#x5728; QuerySet &#x4E0A;&#x662F;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x3002;</p>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> LIMIT <span class="hljs-number">1</span> OFFSET <span class="hljs-number">2</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all()[<span class="hljs-number">2</span>]
+&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> LIMIT <span class="hljs-number">2</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all()[:<span class="hljs-number">2</span>]
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> LIMIT <span class="hljs-number">1</span> OFFSET <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all()[<span class="hljs-number">1</span>:<span class="hljs-number">2</span>]
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+</code></pre>
+<h2 id="&#x67E5;&#x8A62;&#x55AE;&#x7B46;-select-one"><a name="&#x67E5;&#x8A62;&#x55AE;&#x7B46;-select-one" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8A62;&#x55AE;&#x7B46;-select-one"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8A62;&#x55AE;&#x7B46; (SELECT ONE)</h2>
+<p>&#x9019;&#x5E7E;&#x500B;&#x5728;&#x67E5;&#x8A62;&#x662F; <code>&#x7A7A;&#x503C; (DoesNotExist)</code> &#x6216;&#x662F; <code>&#x591A;&#x7B46; (MultipleObjectsReturned)</code> &#x6642;&#xFF0C;&#x90FD;&#x6703;&#x76F4;&#x63A5;&#x62CB;&#x932F;&#xFF0C;&#x8ACB;&#x78BA;&#x5B9A;&#x4E00;&#x5B9A;&#x53EA;&#x6709;&#x4E00;&#x7B46;&#x3002;</p>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-number">1</span> LIMIT <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.get(pk=<span class="hljs-number">1</span>)
+&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> ORDER BY <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> ASC LIMIT <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.first()
+&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> ORDER BY <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> DESC LIMIT <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.last()
+&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;
+</code></pre>
+<h2 id="&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-interger-field"><a name="&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-interger-field" class="anchor-navigation-ex-anchor" href="#&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-interger-field"><i class="fa fa-link" aria-hidden="true"></i></a>&#x900F;&#x904E;&#x6578;&#x503C;&#x6B04;&#x4F4D;&#x904E;&#x6FFE; (SELECT WITH INTERGER FIELD)</h2>
+<p>&#x9019;&#x88E1;&#x7528;&#x50F9;&#x683C;&#x6B04;&#x4F4D;&#x793A;&#x7BC4;&#xFF0C;&#x5C07;&#x6B04;&#x4F4D;&#x52A0;&#x4E0A;&#x96D9;&#x5E95;&#x7DDA;&#x518D;&#x52A0;&#x4E0A;&#x904B;&#x7B97;&#x8A9E;&#x6CD5;&#xFF0C;&#x4F9D;&#x5E8F;&#x662F; <code>=</code>, <code>&lt; (lt)</code>, <code>&lt;= (lte)</code>, <code>&gt; (gt)</code>, <code>&gt;= (gte)</code>&#x3002;</p>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> = <span class="hljs-number">350</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(price=<span class="hljs-number">350</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> &lt; <span class="hljs-number">350</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(price__lt=<span class="hljs-number">350</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> &lt;= <span class="hljs-number">350</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(price__lte=<span class="hljs-number">350</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> &gt; <span class="hljs-number">350</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(price__gt=<span class="hljs-number">350</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> &gt;= <span class="hljs-number">350</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(price__gte=<span class="hljs-number">350</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+</code></pre>
+<h2 id="&#x6392;&#x5E8F;-orderby"><a name="&#x6392;&#x5E8F;-orderby" class="anchor-navigation-ex-anchor" href="#&#x6392;&#x5E8F;-orderby"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6392;&#x5E8F; (ORDER_BY)</h2>
+<p>&#x9019;&#x88E1;&#x7528;&#x50F9;&#x683C;&#x6B04;&#x4F4D;&#x793A;&#x7BC4;&#xFF0C;&#x4F9D;&#x5E8F;&#x662F; <code>&#x7531;&#x5C0F;&#x5230;&#x5927;</code>, <code>&#x7531;&#x5927;&#x5230;&#x5C0F;</code>, <code>&#x4E82;&#x6578;&#x6392;&#x5E8F;</code>&#xFF0C;</p>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> ORDER BY <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> ASC;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.order_by(<span class="hljs-string">&apos;price&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> ORDER BY <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> DESC;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.order_by(<span class="hljs-string">&apos;-price&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> ORDER BY RAND() ASC;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.order_by(<span class="hljs-string">&apos;?&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+</code></pre>
+<h2 id="&#x66F4;&#x65B0;&#x8CC7;&#x6599;-update"><a name="&#x66F4;&#x65B0;&#x8CC7;&#x6599;-update" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x8CC7;&#x6599;-update"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x8CC7;&#x6599; (UPDATE)</h2>
+<p>&#x9019;&#x88E1;&#x793A;&#x7BC4;&#x8981;&#x4FEE;&#x6539;&#x8CC7;&#x6599;&#x7684;&#x5EFA;&#x7ACB;&#x65E5;&#x671F;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x5011;&#x793A;&#x7BC4;&#x5F8C;&#x7E8C;&#x7684;&#x65E5;&#x671F;&#x904E;&#x6FFE;&#x8DDF;&#x6392;&#x5E8F;&#x3002;
+&#x6211;&#x5011;&#x9996;&#x5148;&#x8981;&#x6E96;&#x5099;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x65E5;&#x671F;&#x8CC7;&#x6599;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.utils.timezone <span class="hljs-keyword">import</span> datetime
+<span class="hljs-meta">&gt;&gt;&gt; </span>days = [<span class="hljs-number">1</span>, <span class="hljs-number">15</span>, <span class="hljs-number">31</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>date1, date2, date3 = [datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, day) <span class="hljs-keyword">for</span> day <span class="hljs-keyword">in</span> days]
+<span class="hljs-meta">&gt;&gt;&gt; </span>date1, date2, date3
+(datetime.datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), datetime.datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, <span class="hljs-number">15</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>), datetime.datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, <span class="hljs-number">31</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>))
+</code></pre>
+<p>&#x9019;&#x88E1;&#x53EF;&#x4EE5;&#x770B;&#x5230; Django ORM &#x5BE6;&#x969B;&#x4E0A;&#x662F;&#x60F0;&#x6027;&#x7684;&#xFF0C;&#x5B83;&#x6703;&#x8981;&#x904B;&#x7B97;&#x6642;&#xFF0C;&#x624D;&#x771F;&#x7684;&#x53BB;&#x57F7;&#x884C; SQL&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.created_at = date1
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.created_at
+datetime.datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-number">1</span> LIMIT <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.get(pk=<span class="hljs-number">1</span>).created_at
+datetime.datetime(<span class="hljs-number">2021</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">7</span>, <span class="hljs-number">47</span>, <span class="hljs-number">12</span>, <span class="hljs-number">180462</span>, tzinfo=&lt;UTC&gt;)
+
+UPDATE <span class="hljs-string">&quot;coffees_coffee&quot;</span> SET <span class="hljs-string">&quot;created_at&quot;</span> = <span class="hljs-string">&apos;2019-12-31 16:00:00&apos;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.save()
+
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee2.created_at = date2
+
+UPDATE <span class="hljs-string">&quot;coffees_coffee&quot;</span> SET <span class="hljs-string">&quot;created_at&quot;</span> = <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-number">2</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee2.save()
+
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee3.created_at = date3
+
+UPDATE <span class="hljs-string">&quot;coffees_coffee&quot;</span> SET <span class="hljs-string">&quot;created_at&quot;</span> = <span class="hljs-string">&apos;2020-01-30 16:00:00&apos;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-number">3</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee3.save()
+</code></pre>
+<h2 id="&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-datetime-field"><a name="&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-datetime-field" class="anchor-navigation-ex-anchor" href="#&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE;-select-with-datetime-field"><i class="fa fa-link" aria-hidden="true"></i></a>&#x900F;&#x904E;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x904E;&#x6FFE; (SELECT WITH DATETIME FIELD)</h2>
+<p>&#x9019;&#x88E1;&#x7528;&#x525B;&#x525B;&#x4FEE;&#x6539;&#x7684;&#x5EFA;&#x7ACB;&#x65E5;&#x671F;&#x6B04;&#x4F4D;&#x793A;&#x7BC4;&#xFF0C;&#x4E00;&#x6A23;&#x5C07;&#x6B04;&#x4F4D;&#x52A0;&#x4E0A;&#x96D9;&#x5E95;&#x7DDA;&#x518D;&#x52A0;&#x4E0A;&#x904B;&#x7B97;&#x8A9E;&#x6CD5;&#xFF0C;&#x4F9D;&#x5E8F;&#x662F; <code>=</code>, <code>&lt; (lt)</code>, <code>&lt;= (lte)</code>, <code>&gt; (gt)</code>, <code>&gt;= (gte)</code>&#x3002;
+&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x65E5;&#x671F;&#x5B57;&#x4E32;&#x4F86;&#x6BD4;&#x5C0D;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x5EFA;&#x7ACB; datetime &#x7269;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-python">SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span> = <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(created_at=<span class="hljs-string">&apos;2020-01-15&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span> &lt; <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(created_at__lt=<span class="hljs-string">&apos;2020-01-15&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span> &lt;= <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(created_at__lte=<span class="hljs-string">&apos;2020-01-15&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span> &gt; <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(created_at__gt=<span class="hljs-string">&apos;2020-01-15&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;created_at&quot;</span> &gt;= <span class="hljs-string">&apos;2020-01-14 16:00:00&apos;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.filter(created_at__gte=<span class="hljs-string">&apos;2020-01-15&apos;</span>)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+</code></pre>
+<h2 id="&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6;-select-wiht-multi-condition"><a name="&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6;-select-wiht-multi-condition" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6;-select-wiht-multi-condition"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8A62;&#x591A;&#x7A2E;&#x689D;&#x4EF6; (SELECT WIHT MULTI CONDITION)</h2>
+<p>&#x6211;&#x5011;&#x9664;&#x4E86;&#x6B63;&#x5411;&#x7684; filter &#x4F86;&#x9032;&#x884C;&#x904E;&#x6FFE;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x53CD;&#x5411;&#x7684; exclude &#x4F86;&#x9032;&#x884C;&#x6392;&#x9664;&#x3002;
+&#x6211;&#x5011;&#x5728;&#x4E0B; ORM &#x6642;&#xFF0C;&#x958B;&#x982D;&#x90FD;&#x6703;&#x4F7F;&#x7528; Model.objects&#xFF0C;&#x5BE6;&#x969B;&#x4E0A;&#x6703;&#x5C0D;&#x61C9;&#x5230;&#x90A3;&#x500B; Model &#x4E0B;&#x7684; Manager&#xFF0C;&#x7531; Manager &#x4F86;&#x8F49;&#x63DB;&#x6210; ORM&#x3002;
+objects &#x5F8C;&#x9762;&#x7684;&#x8A9E;&#x6CD5;&#x662F;&#x53EF;&#x4EE5;&#x7121;&#x9650;&#x4E32;&#x63A5;&#x7684;&#xFF0C;Manager &#x6703;&#x5E6B;&#x6211;&#x5011;&#x63A7;&#x5236;&#x597D;&#xFF0C;&#x5728;&#x771F;&#x6B63;&#x904B;&#x7B97;&#x6642;&#xFF0C;&#x4E00;&#x6B21;&#x5168;&#x90E8;&#x4E32;&#x63A5;&#x597D;&#xFF0C;&#x518D;&#x767C;&#x7D66;&#x8CC7;&#x6599;&#x5EAB;&#x3002;</p>
+<pre><code class="lang-python">SELECT * FROM &quot;coffees_coffee&quot;
+WHERE (&quot;coffees_coffee&quot;.&quot;name&quot; LIKE &apos;%&#x5496;&#x5561;%&apos; ESCAPE &apos;\&apos; AND &quot;coffees_coffee&quot;.&quot;price&quot; = 300);
+Coffee.objects.filter(name__contains=&apos;&#x5496;&#x5561;&apos;, price=300)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;]&gt;
+
+SELECT * FROM &quot;coffees_coffee&quot;
+WHERE (&quot;coffees_coffee&quot;.&quot;name&quot; LIKE &apos;%&#x5496;&#x5561;%&apos; ESCAPE &apos;\&apos; AND &quot;coffees_coffee&quot;.&quot;price&quot; = 300);
+Coffee.objects.filter(name__contains=&apos;&#x5496;&#x5561;&apos;, price=300)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E00;&#x865F;&gt;]&gt;
+
+SELECT * FROM &quot;coffees_coffee&quot;
+WHERE (&quot;coffees_coffee&quot;.&quot;name&quot; LIKE &apos;%&#x5496;&#x5561;%&apos; ESCAPE &apos;\&apos; AND NOT (&quot;coffees_coffee&quot;.&quot;price&quot; = 300));
+Coffee.objects.filter(name__contains=&apos;&#x5496;&#x5561;&apos;).exclude(price=300)
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+</code></pre>
+<h2 id="&#x66F4;&#x65B0;&#x591A;&#x7B46;-update-many"><a name="&#x66F4;&#x65B0;&#x591A;&#x7B46;-update-many" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x591A;&#x7B46;-update-many"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x591A;&#x7B46; (UPDATE MANY)</h2>
+<p>&#x9019;&#x88E1;&#x6703;&#x628A;&#x7B26;&#x5408;&#x689D;&#x4EF6;&#x7684;&#x8CC7;&#x6599;&#x90FD;&#x9032;&#x884C;&#x6B04;&#x4F4D;&#x66F4;&#x65B0;&#xFF0C;&#x4E26;&#x56DE;&#x50B3;&#x66F4;&#x65B0;&#x7B46;&#x6578;&#x3002;</p>
+<pre><code class="lang-python">UPDATE <span class="hljs-string">&quot;coffees_coffee&quot;</span> SET <span class="hljs-string">&quot;roast&quot;</span> = <span class="hljs-string">&apos;High&apos;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;price&quot;</span> &gt; <span class="hljs-number">300</span>;
+Coffee.objects.filter(price__gt=<span class="hljs-number">300</span>).update(roast=<span class="hljs-string">&apos;High&apos;</span>)
+<span class="hljs-number">2</span>
+</code></pre>
+<h2 id="&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599;-add-many-to-mant-field"><a name="&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599;-add-many-to-mant-field" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599;-add-many-to-mant-field"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B0;&#x589E;&#x591A;&#x5C0D;&#x591A;&#x8CC7;&#x6599; (ADD MANY TO MANT Field)</h2>
+<p>&#x591A;&#x5C0D;&#x591A;&#x7121;&#x6CD5;&#x76F4;&#x63A5;&#x585E;&#x5728; create &#x7684;&#x53C3;&#x6578;&#x88E1;&#x9762;&#xFF0C;&#x8981;&#x900F;&#x904E;&#x4E0B;&#x9762;&#x9019;&#x6A23;&#x7528;&#x6B04;&#x4F4D; add &#x7684;&#x65B9;&#x5F0F;&#x585E;&#x9032;&#x53BB;&#x3002;</p>
+<pre><code class="lang-python">INSERT INTO <span class="hljs-string">&quot;coffees_tag&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:56:32.746569&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:56:32.746610&apos;</span>, <span class="hljs-string">&apos;&#x7D93;&#x5178;&apos;</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>tag_classic = Tag.objects.create(name=<span class="hljs-string">&apos;&#x7D93;&#x5178;&apos;</span>)
+
+INSERT INTO <span class="hljs-string">&quot;coffees_tag&quot;</span> (<span class="hljs-string">&quot;created_at&quot;</span>, <span class="hljs-string">&quot;updated_at&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>)
+VALUES (<span class="hljs-string">&apos;2021-05-01 07:56:32.754009&apos;</span>, <span class="hljs-string">&apos;2021-05-01 07:56:32.754050&apos;</span>, <span class="hljs-string">&apos;&#x6C34;&#x6D17;&#x6CD5;&apos;</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>tag_wash = Tag.objects.create(name=<span class="hljs-string">&apos;&#x6C34;&#x6D17;&#x6CD5;&apos;</span>)
+
+INSERT OR IGNORE INTO <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span> (<span class="hljs-string">&quot;coffee_id&quot;</span>, <span class="hljs-string">&quot;tag_id&quot;</span>)
+SELECT <span class="hljs-number">1</span>, <span class="hljs-number">1</span> UNION ALL SELECT <span class="hljs-number">1</span>, <span class="hljs-number">2</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.tags.add(tag_classic, tag_wash)
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_tag&quot;</span>
+INNER JOIN <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span>
+ON (<span class="hljs-string">&quot;coffees_tag&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> = <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span>.<span class="hljs-string">&quot;tag_id&quot;</span>)
+WHERE <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span>.<span class="hljs-string">&quot;coffee_id&quot;</span> = <span class="hljs-number">1</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.tags.all()
+&lt;QuerySet [&lt;Tag: &#x7D93;&#x5178;&gt;, &lt;Tag: &#x6C34;&#x6D17;&#x6CD5;&gt;]&gt;
+</code></pre>
+<h2 id="&#x522A;&#x9664;-delete"><a name="&#x522A;&#x9664;-delete" class="anchor-navigation-ex-anchor" href="#&#x522A;&#x9664;-delete"><i class="fa fa-link" aria-hidden="true"></i></a>&#x522A;&#x9664; (DELETE)</h2>
+<p>&#x522A;&#x9664;&#x6642;&#x6703;&#x628A;&#x95DC;&#x806F;&#x7684;&#x8CC7;&#x6599;&#x4E5F;&#x4E00;&#x4F75;&#x6E05;&#x9664;&#xFF0C;&#x522A;&#x9664;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x4E0D;&#x53EF;&#x9006;&#x7684;&#xFF0C;&#x8ACB;&#x4E09;&#x601D;&#x5F8C;&#x518D;&#x9032;&#x884C;&#x3002;
+&#x7B2C;&#x4E00;&#x7A2E;&#x662F;&#x8F03;&#x70BA;&#x5B89;&#x5168;&#x7684;&#x55AE;&#x7B46;&#xFF0C;&#x7B2C;&#x4E8C;&#x7A2E;&#x591A;&#x7B46;&#x522A;&#x9664;&#x524D;&#xFF0C;&#x8ACB;&#x78BA;&#x5B9A;&#x597D;&#x904E;&#x6FFE;&#x6B63;&#x78BA;&#x3002;</p>
+<pre><code class="lang-python">DELETE FROM <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span>.<span class="hljs-string">&quot;coffee_id&quot;</span> IN (<span class="hljs-number">1</span>);
+DELETE FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> IN (<span class="hljs-number">1</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>coffee1.delete()
+(<span class="hljs-number">3</span>, {<span class="hljs-string">&apos;coffees.Coffee_tags&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;coffees.Coffee&apos;</span>: <span class="hljs-number">1</span>})
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all()
+&lt;QuerySet [&lt;Coffee: &#x5496;&#x5561;&#x4E8C;&#x865F;&gt;, &lt;Coffee: &#x5496;&#x5561;&#x4E09;&#x865F;&gt;]&gt;
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span>;
+DELETE FROM <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee_tags&quot;</span>.<span class="hljs-string">&quot;coffee_id&quot;</span> IN (<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+DELETE FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span> WHERE <span class="hljs-string">&quot;coffees_coffee&quot;</span>.<span class="hljs-string">&quot;id&quot;</span> IN (<span class="hljs-number">3</span>, <span class="hljs-number">2</span>);
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all().delete()
+(<span class="hljs-number">2</span>, {<span class="hljs-string">&apos;coffees.Coffee&apos;</span>: <span class="hljs-number">2</span>})
+
+SELECT * FROM <span class="hljs-string">&quot;coffees_coffee&quot;</span>;
+<span class="hljs-meta">&gt;&gt;&gt; </span>Coffee.objects.all()
+&lt;QuerySet []&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第五章：建立資料庫.html" class="navigation navigation-prev " aria-label="Previous page: 第五章：建立資料庫">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第六章：建立列表頁面.html" class="navigation navigation-next " aria-label="Next page: 第六章：建立列表頁面">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第六章：認識 Django ORM","level":"1.7","depth":1,"next":{"title":"第六章：建立列表頁面","level":"1.8","depth":1,"path":"chapters/第六章：建立列表頁面.md","ref":"./chapters/第六章：建立列表頁面.md","articles":[]},"previous":{"title":"第五章：建立資料庫","level":"1.6","depth":1,"path":"chapters/第五章：建立資料庫.md","ref":"./chapters/第五章：建立資料庫.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","copy-code-button","theme-comscore"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/第六章：認識DjangoORM.md","mtime":"2021-05-14T05:32:52.649Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T05:33:29.070Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
