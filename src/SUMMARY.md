@@ -12,5 +12,6 @@
 * [第八章：建立新增頁面](./chapters/第八章：建立新增頁面.md)
 * [第九章：建立編輯頁面](./chapters/第九章：建立編輯頁面.md)
 * [第十章：建立刪除頁面](./chapters/第十章：建立刪除頁面.md)
-* [第十一章：建立 REST API.md](./chapters/第十一章：建立RESTAPI.md)
+* [第十一章：建立 REST API](./chapters/第十一章：建立RESTAPI.md)
+* [部署到Heroku平台](./chapters/部署到Heroku平台.md)
 
